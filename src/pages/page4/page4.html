@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar color="custom-color">
+
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <h3 style="text-align: center; color:rgb(0, 59, 100);; margin-top: 50px;">Sign in with Movies4Star</h3>
+    <ion-list style="margin-top: 20px;">
+        <ion-item>
+            <ion-label class="lbl-mail" float>Email</ion-label>
+            <ion-input style="padding-left:3em;" type="text" [(ngModel)]="data.email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label class="lbl-pass" fixed>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="data.password"></ion-input>
+        </ion-item>
+        <br>
+
+        <button ion-button style="background-color: rgb(0, 59, 100);" color="black" full round (click)="submit()">Login</button>
+        <br>
+        <button ion-button style="background-color: rgb(0, 59, 100);" color="black" full round (click)="signUp()">Create Account</button>
+        <br>
+        <h6 style="text-align:center; color:rgb(0, 59, 100);" (click)="forget()">Forgot password?</h6>
+    </ion-list>
+    <br>
+    <br><br>
+</ion-content>
+
+<style>
+    .butn {
+        background: transparent;
+        border: none;
+        margin: auto;
+        display: block;
+    }
+</style>

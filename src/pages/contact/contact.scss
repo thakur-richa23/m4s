@@ -1,0 +1,46 @@
+page-contact {
+.card{
+        background-color:rgba(255, 255, 255, 0.5);
+        margin-top:50px;
+        border-radius:10px;
+    }
+    .card-content{
+        height:420px;
+    }
+    .item{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    .msg{
+        height:130px;  
+    }
+    .input-wrapper{
+        align-items:flex-start;
+    }
+    .button{
+        width:93px;
+        height:34px;
+        font-size:14px;
+    background-color: #003b64;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #003b64;
+    margin-top:1em;
+    }
+    .btn{
+        text-align:center;
+        
+    }
+    .capital{
+        color: #003b64;;
+        text-align:center;
+        font-size:24px;
+        font-style: italic;
+    }
+    .scroll-content{margin-top: 56px; 
+    background: linear-gradient(45deg, rgba(0,131,224,1) 0%, rgba(0,59,100,1) 100%); }
+.capital{color:#fff!important;}
+.card-content-md{padding:28px 16px 13px 16px}
+
+}

@@ -1,0 +1,38 @@
+<ion-header>
+
+    <ion-navbar>
+        <!--<ion-title ></ion-title>-->
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <p class="capital">Feel Free to Contact Us</p>
+    <ion-card class="card">
+        <ion-card-content class="card-content">
+            <ion-list>
+
+                <ion-item class="item">
+                    <ion-label>Name</ion-label>
+                    <ion-input type="text" [(ngModel)]="contact.name"></ion-input>
+                </ion-item>
+
+                <ion-item class="item">
+                    <ion-label>Email</ion-label>
+                    <ion-input type="email" [(ngModel)]="contact.email"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label class="label">Message</ion-label>
+                    <ion-textarea rows="8" col="12" class="msg" [(ngModel)]="contact.message"></ion-textarea>
+                </ion-item>
+
+
+            </ion-list>
+
+            <div padding class="btn">
+                <button ion-button small outline class="button" (click)="send()">Send</button>
+            </div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

@@ -1,0 +1,81 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-admobpro": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "218325921972043",
+            "APP_NAME": "MoviesforStar",
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-googleplus": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-nativestorage": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova.plugins.diagnostic": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "com.bunkerpalace.cordova.YoutubeVideoPlayer": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "com.moust.cordova.videoplayer": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-app-update": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-app-version": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-insomnia": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-extension": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-appversion": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        }
+    }
+}

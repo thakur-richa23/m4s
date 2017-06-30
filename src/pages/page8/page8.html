@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-card>
+        <ion-card-content>
+            <p style="color:#fff;">{{ dmca.content}}</p>
+        </ion-card-content><br><br>
+        <ion-item class="box-margin">
+            <ion-label>Name</ion-label>
+            <ion-input type="text" name="title" [(ngModel)]="data.name"></ion-input>
+        </ion-item><br>
+        <ion-item class="box-margin">
+            <ion-label>Email</ion-label>
+            <ion-input type="email" name="email" [(ngModel)]="data.email"></ion-input>
+        </ion-item><br>
+        <ion-item class="box-margin">
+            <ion-label>Message</ion-label>
+            <ion-textarea rows="8" col="12" class="msg" [(ngModel)]="data.message"></ion-textarea>
+        </ion-item><br>
+        <div class="submit">
+            <button class="btn-submit" ion-button type="submit" (click)="submit()">Submit</button>
+        </div>
+    </ion-card>
+</ion-content>

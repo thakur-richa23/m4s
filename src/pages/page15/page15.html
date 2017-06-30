@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar color="custom-color">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>
+            <img alt="Company Logo" height="40px" (click)="redirect()" src="img/logo.gif">
+        </ion-title>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="let item of allCategories" (click)="itemSelected(item.CatLanguageSlug)">
+   {{item.CatLanguageName}}
+  </button>
+    </ion-list>
+</ion-content>

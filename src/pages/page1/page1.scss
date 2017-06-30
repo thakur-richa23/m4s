@@ -1,0 +1,129 @@
+page-page1 {
+.toolbar-background {
+    background-color: #003b64;
+}
+.listTitle
+{
+   // background-color : #58B43F;
+    color : #ffffff !important;
+   // box-shadow : 0px 6px 10px #888888;
+
+}
+.text-smaller{
+    border-right: 1px solid $list-md-border-color;
+}
+.row-dots{
+    border-bottom: 1px solid $list-md-border-color;
+}
+.dot{
+    border:1px solid $list-md-border-color;
+}
+.buttons-Background{
+    background: none;
+}
+.icon-size{
+    font-size: 25px;
+      color: teal;
+}
+.segment-button ion-icon {
+  font-size: 8.8rem;
+}
+
+.segment-button {
+  max-height: 8.16rem;
+}
+.center-button{
+    margin: auto;
+    display: block;
+    font-size: 12px;
+}
+.slide-box-size{
+    height: 27%;
+}
+.slide-box-size-two{
+    height: 26%;
+}
+.card-md{margin:0px;width:auto;}
+
+.scroll-content {
+    padding: 0px!important;
+}
+.card-title-md{    font-size: 1em;}
+.card-content-md1{ padding: 8px 16px 8px 6px;}
+.card_img{height: 166px;}
+.caption{color:#fff;position:absolute;bottom:-22%;left:0%;padding:10px;text-align:left; transform: translateY(-50%);width:100%;
+ background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(transparent,#000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent,#000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent,#000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(transparent,#000);
+}
+.caption p{
+    margin:0px;
+    }
+.icon-size1{
+    float:left;font-size:38px;padding:0px 7px;width:15%;
+    }
+.caption_text{
+    width:85%;float:left; 
+    }
+.caption_text h4{
+    font-size:18px;
+    margin:0px;
+    font-weight:bold;
+    }
+
+.caption_text p{
+    font-size:15px;
+    
+    }
+
+
+.button_style button{
+    color: #222;
+    background-color: transparent;
+    border-radius: 0px;
+    width: 100%;
+   }
+
+    .movies-card{
+    float:left;width:33%;
+    }
+    .text-change{
+        margin-left: 10px;
+        display: inline-block;
+        color: #fff;
+    }
+    .inline{
+         display: inline-block;
+    }
+
+    .infinite-scroll{
+        width:40px; 
+        height:20px;
+        font-size:12px; 
+        float: right; 
+        margin-top: 50px;
+    }
+
+    .more-btn{
+        width:40px; height:20px; font-size:12px; float: right; margin-top: 16px; margin-right: 10px;background: #000;
+    }
+    .background{background:none;box-shadow: none;}
+    .background-color{    background: rgb(0, 37, 63);}
+  .text1{color:#fff;}
+    .swiper-pagination-bullet{
+        background:darkkhaki; 
+        }
+
+.button-md{
+    text-transform: none !important; 
+        }
+.tile{
+    background: rgba(255, 255, 255, 0.5);
+}
+.item2{background: transparent;padding-left:0px;}
+.item-md.item-block .item-inner{border-bottom:0px;}
+.item-md.item-block .item-inner{padding-right:0px;}
+.label-md{margin: 13px 0px;}
+}

@@ -1,0 +1,67 @@
+.ItsColor {
+    background-color: teal;
+    color: #fff !important;
+}
+
+ion-loading.a {
+    background: #000!important;
+}
+
+.toolbar-md-custom-color .bar-button-clear-md,
+.toolbar-md-custom-color .bar-button-default-md,
+.toolbar-md-custom-color .bar-button-outline-md,
+.toolbar-md-custom-color .toolbar-title-md {
+    color: teal;
+}
+
+.change {
+    height: 36px;
+    position: relative;
+    text-align: center;
+    color: oldlace;
+    margin-top: 20px;
+}
+
+.change .item-md {
+    color: #fff;
+    background: linear-gradient(45deg, #0083e0 0%, #003b64 100%);
+    padding-left: 0px;
+}
+
+.menu-inner .scroll-content {
+    background: linear-gradient(45deg, #0083e0 0%, #003b64 100%);
+}
+
+.content-md {
+    color: #000;
+    background-color: #efefef;
+}
+
+.text-change {
+    color: #000!important;
+}
+
+.more-btn {
+    background: #efefef!important;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.77);
+}
+
+.label-md {
+    padding-left: 10px;
+}
+
+//.toolbar-background-md{background:linear-gradient(45deg, #b4dcf9 0%, #50b7ff 100%);}
+// .item-md {
+//     position: relative;
+//     padding-right: 0;
+//     padding-left: 16px;
+//     font-size: 1.6rem;
+//     font-weight: normal;
+//     text-transform: none;
+//     color: #fff;
+//     background-color: teal;
+// }
+// .list-md .item-block .item-inner {
+//     border-bottom: 1px solid teal;
+// }

@@ -1,0 +1,39 @@
+page-newpass {
+.card{
+        background-color:rgba(255, 255, 255, 0.5);
+        margin-top:50px;
+        border-radius:10px;
+    }
+    .card-content{
+        height:320px;
+    }
+    .item{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    .msg{
+        height:150px;  
+    }
+    .input-wrapper{
+        align-items:flex-start;
+    }
+    .button{
+        width:80px;
+        height:40px;
+        font-size:16px;
+        background-color:darkkhaki; 
+        text-align:center;
+        border-radius:10px;
+        color:black;
+    }
+    .btn{
+        text-align:center;
+        
+    }
+    .capital{
+        color:#c7c390;
+        text-align:center;
+        font-size:24px;
+        font-style: italic;
+    }
+}

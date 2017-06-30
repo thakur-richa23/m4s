@@ -1,0 +1,21 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar class="toolbar" style="background: linear-gradient(45deg, #0083e0 0%, #003b64 100%);">
+      <ion-title><img alt="Company Logo" height="40px" src="img/logo.gif"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content >
+    <ion-list class="change">
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+      
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

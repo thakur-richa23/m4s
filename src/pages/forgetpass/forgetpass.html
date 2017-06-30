@@ -1,0 +1,29 @@
+
+<ion-header>
+
+    <ion-navbar>
+        <ion-title></ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <p class="capital">Forgot Password</p>
+    <ion-card class="card">
+        <ion-card-content class="card-content">
+            <ion-list>
+
+                <ion-item class="item">
+                    <ion-label>Email</ion-label>
+                    <ion-input type="email" [(ngModel)]="forget.email"></ion-input>
+                </ion-item>
+
+            </ion-list>
+
+            <div padding class="btn">
+                <button ion-button small outline class="button" (click)="forget_send()">Send</button>
+            </div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

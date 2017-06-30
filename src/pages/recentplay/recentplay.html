@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list *ngFor="let i of items" (click)="openMovieinfo(i.ID,allTypesOfMovies)">
+        <ion-item style="background-color: paleturquoise;">
+            <ion-thumbnail item-left>
+                <img style="height:100%;" [src]='i.MovieImage'>
+            </ion-thumbnail>
+            <h2 class="heading-top">{{i.MovieTitle}}</h2>
+            <h2 class="heading-top" *ngIf="!i.MovieTitle">{{i.TrailorTitle}}</h2>
+            <p class="paragrah-top">{{i.MovieDate}}</p>
+            <p class="paragrah-top" *ngIf="!i.MovieDate">{{i.TrailorDate}}</p>
+        </ion-item>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+</ion-content>

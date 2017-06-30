@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-26.0.0-alpha1_2d9fdfa739d558a2c22318db06555da9d1669fb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_8c1eb9f154a2b3a418f41abcce4524df834396b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec7d3099b4e3cf23230c78acaae438f3371e1c19">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-identity-10.2.1_d1e154df676fecdf89bfa1be36b3a68aff468369.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfa47e1b140562d47bc670629d07e209cd8b02c4">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gcm-10.2.1_fc928335247fda71a9ac7517a379665ac42a6db4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\customtabs\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b24e0a6d84a759f2094cbb27afd5ac9cb30275c9">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-customtabs-24.0.0_0d9167aea0eae0102d0d27b113674655dd6810dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="abf7c64e0bbaaa931738856734f76646ae62d9a5">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-iid-10.2.1_b9c0736c404bf950b546a5092de768bafe606fb8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.2.1_626de13b591c84861d5700dbf5f3352134cf9f2d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.2.1_69b97be53cdb86762ede24b517aa3b6db8643c13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab8343c3aadefce37313ceadd8bc4db1993f2ff0">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-lite-10.2.1_36696622fba3a6259ac8a0f509251ae9712ea76f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\libs\cordova-generic-ad.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3ddc99d9a0bfde0e34e8878f735cedd9cfcf7b02">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\cordova-generic-ad_e2ee4324e1e45996dd320bb4503403a8fefdaef8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25f55515117e14a658120a7b01a9ea5170409db4">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-10.2.1_541005762b2c9708fb6027541a80f48cc8cc8472.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bfd85a88cf976eb2c54507cc914d8e8914c2f71e">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gass-10.2.1_015f9f7a13972af7c8dfffae4a7792bd01ac4b3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.0.0-alpha1_70238dc351b354888ba9ad6edc9a2c7a0163ad85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="afe8eb4906b94df000e2b3714c864ec42d4e4ea6">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_8133a11225a58c2ef423776d203cc13ae800de8c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.0.0-alpha1_4f6c86d044b64e708831d566d366eb0367a8da56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3683531139103cc263b71d8b5ac6062832a8fd30">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-clearcut-10.2.1_aad69ad21244b5a4d14084fff7f129ff1e8a4b83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.2.1_7910edd25103ee745bbe8d0f547493fa1cd1bda0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-26.0.0-alpha1_1acafc5646a6e29f386277213bfa426ccb122266.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da5c606c36276a12a356e351882044c6b4b9e8d4">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-10.2.1_15b1c2d5e58ec6ceacec09575b5119b3d7a63c5e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.onesignal\OneSignal\3.5.7\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bfeba9e17614c43b87b9dbef4d9014d66de49b34">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.onesignal-OneSignal-3.5.7_8a7f04bbff770f8f27e6ff6ffbf88960738a92e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-26.0.0-alpha1_ea2fb2b5c172e66fa9b7200974873f692546dd57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\libs\sqlite-connector.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="76169ab23a4f939925491c6fe186749da5a56ee9">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\sqlite-connector_1370613c48b814919f5eb1734f4aa5b771ca5b82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.0.0-alpha1_bff91e6b2875aef87cc1c9a9022608496cf45101.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_e8c90bc79d104360ad2d05ebd3db7771a9daf176.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-10.2.1_2ed5e324aa90879af74326e3bdb22fa051a58a89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12032271e6be735e811ad529cb08ff066c381640">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-10.2.1_156a35e373f347faf241cfbcd2db314f15b28111.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_c51d4fdf57b6e23b7c3fbcc049cda53dcad7b077.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.0.0-alpha1_eca4e42421504459dec099b802571f657e10a579.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.0.0-alpha1_548a805210dae0dc64d7d06d9bdb99411894b221.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.14.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.14.1_43fda855769dc931b6205e888c2eab1a7e4d55b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.0.0-alpha1_e714fe6b90658a1c09675fe60763a30dc9f25714.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\libs\openyoutubeactivity.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5ae2d44e1b17147e0c9f8dcdedb94520238408cb">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\openyoutubeactivity_5483020f3e9c856d720c033779856eb2f282e9d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_9b48caa7463f7f01cd33e0b759d2954007c6de4b.jar" />
+    </item>
+
+</items>

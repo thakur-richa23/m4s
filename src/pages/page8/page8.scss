@@ -1,0 +1,21 @@
+page-page8 {
+.submit{
+    text-align:center;
+    margin-bottom:10px;
+}
+.msg{
+        height:150px;  
+    }
+p{
+text-align:justify;
+}
+.card-md{ background-color:rgba(255,255,255,0.4)  }
+ion-item.box-margin{width: 94%;margin-left: 10px;padding-left: 5px;}
+.submit .btn-submit{  height:10px;background-color: rgb(0, 59, 100);font-size: 13px;padding: 12px 11px;}
+.button-md:hover:not(.disable-hover) {
+    background-color: #003b64;
+}
+ .scroll-content {
+    background: linear-gradient(45deg, #0083e0 0%, #003b64 100%);
+}
+}
