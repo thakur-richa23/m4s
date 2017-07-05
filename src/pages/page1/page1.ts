@@ -112,7 +112,7 @@ constructor(public nav: NavController, public Toast:ToastController,storage: Sto
           AppVersion.getVersionNumber().then((v)=>{
 
           if(status!='1'){
-          this.http.get("http://api.movies4star.com/saveToken?token="+dviceid.userId+"&uuid="+duuid+"&platform="+dplatform+"&manufac="+dmanufacturer+"&model_num="+dmodel+"&version="+dversion+"&serial="+dserial+"&app_version="+v).map(res => res.json()).subscribe(data => {
+          this.http.get("http://api.movies4star.xyz/saveToken?token="+dviceid.userId+"&uuid="+duuid+"&platform="+dplatform+"&manufac="+dmanufacturer+"&model_num="+dmodel+"&version="+dversion+"&serial="+dserial+"&app_version="+v).map(res => res.json()).subscribe(data => {
             this.storage.set('status','1');
           });
           }
@@ -134,32 +134,32 @@ constructor(public nav: NavController, public Toast:ToastController,storage: Sto
     OneSignal.endInit();
   })
     this.storage = storage;
-    this.http.get('http://api.movies4star.com/slider_home').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/slider_home').map(res => res.json()).subscribe(data => {
       this.posts = data;
 
     });
-    this.http.get('http://api.movies4star.com/all_movies_hd').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/all_movies_hd').map(res => res.json()).subscribe(data => {
       this.movies = data;
     });
-    this.http.get('http://api.movies4star.com/trailers_front').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/trailers_front').map(res => res.json()).subscribe(data => {
       this.trailers = data;
     });
-    this.http.get('http://api.movies4star.com/catMovies?slug=Punjabi-Movies').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/catMovies?slug=Punjabi-Movies').map(res => res.json()).subscribe(data => {
       this.punjabiMovies = data;
     });
-    this.http.get('http://api.movies4star.com/catMovies?slug=English-Movies').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/catMovies?slug=English-Movies').map(res => res.json()).subscribe(data => {
       this.englishMovies = data;
     });
-    this.http.get('http://api.movies4star.com/catMovies?slug=Hindi-Movies').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/catMovies?slug=Hindi-Movies').map(res => res.json()).subscribe(data => {
       this.hindiMovies = data;
     });
-    this.http.get('http://api.movies4star.com/docMovies?slug=English-Dubbed-Movies').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/docMovies?slug=English-Dubbed-Movies').map(res => res.json()).subscribe(data => {
       this.EngDubbedMovies = data;
     });
-    this.http.get('http://api.movies4star.com/docMovies?slug=Hollywood-TV-Show').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/docMovies?slug=Hollywood-TV-Show').map(res => res.json()).subscribe(data => {
       this.HollywoodTVShow = data;
     });
-    this.http.get('http://api.movies4star.com/docMovies?slug=documentary').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/docMovies?slug=documentary').map(res => res.json()).subscribe(data => {
       this.documentaryMovies = data;
     });
 

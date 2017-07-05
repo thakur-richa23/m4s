@@ -41,7 +41,7 @@ public final class R {
 		public static final int common_google_signin_btn_text_light = 0x7f02007c;
 		public static final int common_google_signin_btn_text_light_focused = 0x7f02007d;
 		public static final int common_google_signin_btn_text_light_normal = 0x7f02007e;
-		public static final int ic_os_notification_fallback_white_24dp = 0x7f020085;
+		public static final int ic_os_notification_fallback_white_24dp = 0x7f020082;
 	}
 	public static final class id {
 		public static final int adjust_height = 0x7f0d001d;

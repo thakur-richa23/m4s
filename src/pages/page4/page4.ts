@@ -49,7 +49,7 @@ export class Page4 {
 
   submit() {
 
-    this.http.get('http://api.movies4star.com/login?email=' + this.data.email + "&password=" + this.data.password).map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/login?email=' + this.data.email + "&password=" + this.data.password).map(res => res.json()).subscribe(data => {
       if(data.status!="Failed")
       {
       this.data = data.ID;

@@ -35,7 +35,7 @@ export class ContactPage {
 
   send() {
 
-    this.http.get('http://movies4star.com/movies_Api.php?module=contact&name=' + this.contact.name + "&email=" + this.contact.email + "&message=" + this.contact.message).map(res => res.json()).subscribe(data => {
+    this.http.get('http://movies4star.xyz/movies_Api.php?module=contact&name=' + this.contact.name + "&email=" + this.contact.email + "&message=" + this.contact.message).map(res => res.json()).subscribe(data => {
       this.contact = data;
       if (this.contact == "saved") {
         this.platform.ready().then(() => {

@@ -25053,13 +25053,6 @@ page-page2 .true {
   display: none;
 }
 
-page-page2 .controls {
-  width: 100%;
-  height: 8.0971659919028340080971659919028%;
-  /* of figure's height */
-  position: relative;
-}
-
 page-page2 #videoPlayer {
   z-index: 1000;
 }
@@ -25081,14 +25074,6 @@ page-page2 .button-md-danger {
   font-weight: bold;
   font-size: 18px;
   box-shadow: none;
-}
-
-page-page2 video::-webkit-media-controls {
-  display: none !important;
-}
-
-page-page2 video::-webkit-media-controls-enclosure {
-  display: none !important;
 }
 
 page-page2 #content-buttons {

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:2:98-127
 		INJECTED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml
@@ -40,7 +40,7 @@ MERGED from [com.google.android.gms:play-services-iid:10.2.1] C:\Users\mediaoncl
 	android:name
 		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:5:5-36:19
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:5:5-35:19
 MERGED from [com.google.android.gms:play-services-ads-lite:10.2.1] C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:23:5-27:19
 MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.1\AndroidManifest.xml:19:5-21:19
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\AndroidManifest.xml:29:5-20
@@ -151,48 +151,42 @@ action#android.nfc.action.ADAPTER_STATE_CHANGED
 ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:23:17-83
 	android:name
 		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:23:25-80
-activity#com.keyes.youtube.OpenYouTubePlayerActivity
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:26:9-118
-	android:screenOrientation
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:26:78-115
-	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:26:19-77
 amazon:enable-feature
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:27:9-159
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:26:9-159
 	xmlns:amazon
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:27:100-156
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:26:100-156
 	android:required
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:27:75-99
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:26:75-99
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:27:32-74
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:26:32-74
 service#com.onesignal.ADMMessageHandler
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:28:9-92
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:27:9-92
 	android:exported
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:28:18-42
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:27:18-42
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:28:43-89
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:27:43-89
 receiver#com.onesignal.ADMMessageHandler$Receiver
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:29:9-35:20
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:28:9-34:20
 	android:permission
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:29:75-139
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:28:75-139
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:29:19-74
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:28:19-74
 intent-filter#app.movies4star.com+com.amazon.device.messaging.intent.RECEIVE+com.amazon.device.messaging.intent.REGISTRATION
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:30:13-34:29
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:29:13-33:29
 action#com.amazon.device.messaging.intent.REGISTRATION
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:31:17-90
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:30:17-90
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:31:25-87
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:30:25-87
 action#com.amazon.device.messaging.intent.RECEIVE
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:32:17-85
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:31:17-85
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:32:25-82
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:31:25-82
 category#app.movies4star.com
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:33:17-64
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:32:17-64
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:33:27-61
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:32:27-61
 uses-sdk
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:37:5-74
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:36:5-74
 MERGED from [com.google.android.gms:play-services-ads:10.2.1] C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.2.1\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-ads-lite:10.2.1] C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:22:5-43
 MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.1\AndroidManifest.xml:17:5-43
@@ -223,49 +217,45 @@ MERGED from [android:CordovaLib:unspecified:debug] C:\Users\mediaoncloud\Desktop
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:37:42-71
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:36:42-71
 	android:minSdkVersion
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:37:15-41
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:36:15-41
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:38:5-79
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:37:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:10.2.1] C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:20:5-78
 MERGED from [com.onesignal:OneSignal:3.5.7] C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.onesignal\OneSignal\3.5.7\AndroidManifest.xml:25:5-79
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:38:22-76
-uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:39:5-71
-	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:39:22-68
-uses-permission#android.permission.USE_CREDENTIALS
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:40:5-74
-	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:40:22-71
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:41:5-76
-	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:41:22-73
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:37:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:42:5-81
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:38:5-81
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:42:22-78
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:38:22-78
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:43:5-84
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:39:5-84
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:43:22-81
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:39:22-81
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:40:5-71
+	android:name
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:40:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:41:5-74
+	android:name
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:41:22-71
 uses-permission#com.amazon.device.messaging.permission.RECEIVE
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:44:5-86
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:42:5-86
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:44:22-83
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:42:22-83
 permission#app.movies4star.com.permission.RECEIVE_ADM_MESSAGE
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:45:5-121
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:43:5-121
 	android:protectionLevel
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:45:83-118
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:43:83-118
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:45:17-82
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:43:17-82
 uses-permission#app.movies4star.com.permission.RECEIVE_ADM_MESSAGE
-ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:46:5-90
+ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:44:5-90
 	android:name
-		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:46:22-87
+		ADDED from C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\AndroidManifest.xml:44:22-87
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
 ADDED from [com.google.android.gms:play-services-ads-lite:10.2.1] C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:26:9-131
 	android:theme

@@ -31,7 +31,7 @@ constructor(public navCtrl: NavController, public navParams: NavParams, private 
 
   forget_send() {
 
-    this.http.get('http://movies4star.com/movies_Api.php?module=verifyEmail&email=' + this.forget.email).map(res => res.json()).subscribe(data => {
+    this.http.get('http://movies4star.xyz/movies_Api.php?module=verifyEmail&email=' + this.forget.email).map(res => res.json()).subscribe(data => {
       this.forget = data;
       if (this.forget.success == "Sucess") {
         this.platform.ready().then(() => {

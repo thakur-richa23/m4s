@@ -32,7 +32,7 @@ export class Page3 {
 
   onSearchInput() {
     if (this.searchTerm.length > 4) {
-      this.http.get('http://api.movies4star.com/search?slug=' + this.searchTerm).map(res => res.json()).subscribe(data => {
+      this.http.get('http://api.movies4star.xyz/search?slug=' + this.searchTerm).map(res => res.json()).subscribe(data => {
         this.data = data;
       });
     }

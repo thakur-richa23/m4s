@@ -35,7 +35,7 @@ constructor(public navCtrl: NavController,public navParams: NavParams, private h
     submit() {
     if (this.data.password == this.data.confirm_password && this.data.user_name!='' && this.data.email!='') {
 
-        this.http.get('http://api.movies4star.com/signup?userName=' + this.data.user_name + "&userEmail=" + this.data.email + "&userPassword=" + this.data.password).map(res => res.json()).subscribe(data => {
+        this.http.get('http://api.movies4star.xyz/signup?userName=' + this.data.user_name + "&userEmail=" + this.data.email + "&userPassword=" + this.data.password).map(res => res.json()).subscribe(data => {
                 this.data = data;
             if(this.data.status != "Failed"){
                  this.platform.ready().then(() => {

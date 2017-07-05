@@ -42,7 +42,7 @@ export class Page7 {
       });
       loadingPopup.present()
 
-      this.http.get('http://api.movies4star.com/movieDetail?id=' + moviesID).map(res => res.json()).subscribe(data => {
+      this.http.get('http://api.movies4star.xyz/movieDetail?id=' + moviesID).map(res => res.json()).subscribe(data => {
         setTimeout(() => {
           this.moviesvisual = data;
           loadingPopup.dismiss();
@@ -53,7 +53,7 @@ export class Page7 {
     else {
       if (moviesID != undefined) {
 
-        this.http.get('http://api.movies4star.com/trailerDetail?id=' + moviesID).map(res => res.json()).subscribe(data => {
+        this.http.get('http://api.movies4star.xyz/trailerDetail?id=' + moviesID).map(res => res.json()).subscribe(data => {
 
           this.moviesvisual = data;
 
@@ -67,7 +67,7 @@ export class Page7 {
           cssClass: 'a',
         });
         loadingPopup.present();
-        this.http.get('http://api.movies4star.com/trailerDetail?id=' + trailerID).map(res => res.json()).subscribe(data => {
+        this.http.get('http://api.movies4star.xyz/trailerDetail?id=' + trailerID).map(res => res.json()).subscribe(data => {
           setTimeout(() => {
             this.moviesvisual = data;
             loadingPopup.dismiss();
@@ -91,7 +91,7 @@ export class Page7 {
 
         if (this.usrid != null) {
 
-          this.http.get('http://api.movies4star.com/addFavorite?id=' + this.usrid + '&slug=' + b).map(res => res.json()).subscribe(data => {
+          this.http.get('http://api.movies4star.xyz/addFavorite?id=' + this.usrid + '&slug=' + b).map(res => res.json()).subscribe(data => {
 
           }
           );

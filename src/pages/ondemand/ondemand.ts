@@ -33,7 +33,7 @@ export class OndemandPage {
     this.movie.message = '';
   }
   demandsubmit() {
-    this.http.get('http://api.movies4star.com/movieOnDemand&name=' + this.movie.name + "&email=" + this.movie.email + "&movie=" + this.movie.moviename + "&language=" + this.movie.language + "&year=" + this.movie.year + "&category=" + this.movie.category + "&message=" + this.movie.message).map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/movieOnDemand&name=' + this.movie.name + "&email=" + this.movie.email + "&movie=" + this.movie.moviename + "&language=" + this.movie.language + "&year=" + this.movie.year + "&category=" + this.movie.category + "&message=" + this.movie.message).map(res => res.json()).subscribe(data => {
       this.data = data;
       if (this.data.status == "success") {
         this.platform.ready().then(() => {

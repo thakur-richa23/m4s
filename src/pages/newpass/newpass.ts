@@ -34,7 +34,7 @@ export class NewpassPage {
   confirm_pass() {
     if (this.confirm.pass == this.confirm.con_pass) {
 
-      this.http.get('http://movies4star.com/movies_Api.php?module=recoverPassword&otp=' + this.confirm.otp + "&password=" + this.confirm.pass).map(res => res.json()).subscribe(data => {
+      this.http.get('http://movies4star.xyz/movies_Api.php?module=recoverPassword&otp=' + this.confirm.otp + "&password=" + this.confirm.pass).map(res => res.json()).subscribe(data => {
         this.confirm = data;
         this.platform.ready().then(() => {
           window.plugins.toast.show("Password successfully changed", "long", "center");

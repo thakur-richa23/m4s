@@ -30,14 +30,14 @@ export class Page8 {
     this.data.email = '';
     this.data.message = '';
 
-    this.http.get('http://api.movies4star.com/dmca').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/dmca').map(res => res.json()).subscribe(data => {
       this.dmca = data;
     });
 
   }
   submit() {
 
-    this.http.get('http://api.movies4star.com/dmcaEmail?email=' + this.data.email + "&name=" + this.data.name + "&message=" + this.data.message).map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/dmcaEmail?email=' + this.data.email + "&name=" + this.data.name + "&message=" + this.data.message).map(res => res.json()).subscribe(data => {
       this.data = data;
       if (this.data.status == "sucess") {
         this.platform.ready().then(() => {

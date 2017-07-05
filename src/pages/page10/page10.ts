@@ -24,7 +24,7 @@ export class Page10 {
         });
     });
 
-    this.http.get('http://api.movies4star.com/about').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/about').map(res => res.json()).subscribe(data => {
       this.aboutus = data;
     });
   }

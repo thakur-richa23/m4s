@@ -282,15 +282,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\libs\openyoutubeactivity.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5ae2d44e1b17147e0c9f8dcdedb94520238408cb">
-        <dex dex="C:\Users\mediaoncloud\Desktop\All ionic projects\m4s\platforms\android\build\intermediates\pre-dexed\debug\openyoutubeactivity_5483020f3e9c856d720c033779856eb2f282e9d7.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\mediaoncloud\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
         jumboMode="false"
         optimize="true"

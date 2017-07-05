@@ -9,6 +9,30 @@ module.exports = [
         ]
     },
     {
+        "id": "cordova-plugin-appversion.RareloopAppVersion",
+        "file": "plugins/cordova-plugin-appversion/www/app-version.js",
+        "pluginId": "cordova-plugin-appversion",
+        "clobbers": [
+            "AppVersion"
+        ]
+    },
+    {
+        "id": "cordova-plugin-app-update.AppUpdate",
+        "file": "plugins/cordova-plugin-app-update/www/AppUpdate.js",
+        "pluginId": "cordova-plugin-app-update",
+        "clobbers": [
+            "AppUpdate"
+        ]
+    },
+    {
+        "id": "cordova-plugin-app-version.AppVersionPlugin",
+        "file": "plugins/cordova-plugin-app-version/www/AppVersionPlugin.js",
+        "pluginId": "cordova-plugin-app-version",
+        "clobbers": [
+            "cordova.getAppVersion"
+        ]
+    },
+    {
         "id": "cordova-plugin-device.device",
         "file": "plugins/cordova-plugin-device/www/device.js",
         "pluginId": "cordova-plugin-device",
@@ -30,6 +54,14 @@ module.exports = [
         "pluginId": "cordova-plugin-googleplus",
         "clobbers": [
             "window.plugins.googleplus"
+        ]
+    },
+    {
+        "id": "cordova-plugin-insomnia.Insomnia",
+        "file": "plugins/cordova-plugin-insomnia/www/Insomnia.js",
+        "pluginId": "cordova-plugin-insomnia",
+        "clobbers": [
+            "window.plugins.insomnia"
         ]
     },
     {
@@ -84,6 +116,19 @@ module.exports = [
         ]
     },
     {
+        "id": "cordova-plugin-x-toast.Toast",
+        "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
+        "pluginId": "cordova-plugin-x-toast",
+        "clobbers": [
+            "window.plugins.toast"
+        ]
+    },
+    {
+        "id": "cordova-plugin-x-toast.tests",
+        "file": "plugins/cordova-plugin-x-toast/test/tests.js",
+        "pluginId": "cordova-plugin-x-toast"
+    },
+    {
         "id": "cordova-sqlite-storage.SQLitePlugin",
         "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
         "pluginId": "cordova-sqlite-storage",
@@ -109,67 +154,6 @@ module.exports = [
         "runs": true
     },
     {
-        "id": "com.bunkerpalace.cordova.YoutubeVideoPlayer.YoutubeVideoPlayer",
-        "file": "plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/www/YoutubeVideoPlayer.js",
-        "pluginId": "com.bunkerpalace.cordova.YoutubeVideoPlayer",
-        "clobbers": [
-            "YoutubeVideoPlayer"
-        ]
-    },
-    {
-        "id": "com.moust.cordova.videoplayer.VideoPlayer",
-        "file": "plugins/com.moust.cordova.videoplayer/www/videoplayer.js",
-        "pluginId": "com.moust.cordova.videoplayer",
-        "clobbers": [
-            "VideoPlayer"
-        ]
-    },
-    {
-        "id": "cordova-plugin-x-toast.Toast",
-        "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
-        "pluginId": "cordova-plugin-x-toast",
-        "clobbers": [
-            "window.plugins.toast"
-        ]
-    },
-    {
-        "id": "cordova-plugin-x-toast.tests",
-        "file": "plugins/cordova-plugin-x-toast/test/tests.js",
-        "pluginId": "cordova-plugin-x-toast"
-    },
-    {
-        "id": "cordova-plugin-appversion.RareloopAppVersion",
-        "file": "plugins/cordova-plugin-appversion/www/app-version.js",
-        "pluginId": "cordova-plugin-appversion",
-        "clobbers": [
-            "AppVersion"
-        ]
-    },
-    {
-        "id": "cordova-plugin-app-update.AppUpdate",
-        "file": "plugins/cordova-plugin-app-update/www/AppUpdate.js",
-        "pluginId": "cordova-plugin-app-update",
-        "clobbers": [
-            "AppUpdate"
-        ]
-    },
-    {
-        "id": "cordova-plugin-app-version.AppVersionPlugin",
-        "file": "plugins/cordova-plugin-app-version/www/AppVersionPlugin.js",
-        "pluginId": "cordova-plugin-app-version",
-        "clobbers": [
-            "cordova.getAppVersion"
-        ]
-    },
-    {
-        "id": "cordova-plugin-insomnia.Insomnia",
-        "file": "plugins/cordova-plugin-insomnia/www/Insomnia.js",
-        "pluginId": "cordova-plugin-insomnia",
-        "clobbers": [
-            "window.plugins.insomnia"
-        ]
-    },
-    {
         "id": "onesignal-cordova-plugin.OneSignal",
         "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
         "pluginId": "onesignal-cordova-plugin",
@@ -183,25 +167,23 @@ module.exports.metadata =
 {
     "cordova-plugin-extension": "1.5.1",
     "cordova-plugin-admobpro": "2.28.3",
+    "cordova-plugin-appversion": "1.0.0",
+    "cordova-plugin-app-update": "1.3.9",
+    "cordova-plugin-app-version": "0.1.9",
     "cordova-plugin-console": "1.0.5",
     "cordova-plugin-device": "1.1.4",
     "cordova-plugin-facebook4": "1.7.4",
     "cordova-plugin-googleplus": "5.1.1",
+    "cordova-plugin-insomnia": "4.3.0",
     "cordova-plugin-nativestorage": "2.2.1",
     "cordova-plugin-network-information": "1.3.1",
     "cordova-plugin-splashscreen": "4.0.1",
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
+    "cordova-plugin-x-toast": "2.6.0",
     "cordova-sqlite-storage": "2.0.3",
     "cordova.plugins.diagnostic": "3.4.2",
     "ionic-plugin-keyboard": "2.2.1",
-    "com.bunkerpalace.cordova.YoutubeVideoPlayer": "1.0.1",
-    "com.moust.cordova.videoplayer": "1.0.1",
-    "cordova-plugin-x-toast": "2.6.0",
-    "cordova-plugin-appversion": "1.0.0",
-    "cordova-plugin-app-update": "1.3.9",
-    "cordova-plugin-app-version": "0.1.9",
-    "cordova-plugin-insomnia": "4.3.0",
     "onesignal-cordova-plugin": "2.1.2"
 };
 // BOTTOM OF METADATA

@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import { MyApp } from './app.component';
 import { Page1,PopoverPage} from '../pages/page1/page1';
-import { Page2,PopoverPage1} from '../pages/page2/page2';
+import { Page2, PopoverPage1} from '../pages/page2/page2';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { Page4 } from '../pages/page4/page4';
 import { Page5 } from '../pages/page5/page5';
@@ -23,6 +23,7 @@ import { Storage } from '@ionic/storage';
 import { Connect } from '../providers/connect';
 import { AdMob } from '@ionic-native/admob';
 import { AppUpdate } from '@ionic-native/app-update';
+import { VgCoreModule } from 'videogular2/core';
 
 @NgModule({
   declarations: [
@@ -45,11 +46,11 @@ import { AppUpdate } from '@ionic-native/app-update';
     NewpassPage,
     OndemandPage,
     RecentplayPage,
-    FavouritePage,
-
+    FavouritePage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    VgCoreModule
   ],
 
   bootstrap: [IonicApp],
@@ -73,7 +74,7 @@ import { AppUpdate } from '@ionic-native/app-update';
     NewpassPage,
     OndemandPage,
     RecentplayPage,
-    FavouritePage,
+    FavouritePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Storage, Connect, StatusBar, Splashscreen, AppUpdate,AdMob]
 })

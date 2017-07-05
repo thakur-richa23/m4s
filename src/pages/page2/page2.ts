@@ -9,6 +9,7 @@ import { Storage } from '@ionic/storage';
 import 'rxjs/add/operator/map';
 import { Insomnia } from 'ionic-native';
 import { StreamingMedia, StreamingVideoOptions } from 'ionic-native';
+import { VgCoreModule } from 'videogular2/core';
 
 declare var window: any;
 @Component({
@@ -44,8 +45,12 @@ export class Page2 {
   movie: any;
   message: any;
   imgurl:any;
-  videoos:any
+  videoos:any;
+  imgid:any;
+
 constructor(public navCtrl: NavController, private platform: Platform, public alertCtrl: AlertController,  sanitizer: DomSanitizer, public navParams: NavParams, public popoverCtrl: PopoverController, private http: Http, private loadingCtrl: LoadingController, storage: Storage) {
+   this.videoos=document.getElementById('my-player'); 
+   
     Network.onDisconnect().subscribe(() => {
       this.platform.ready().then(() => {
           window.plugins.toast.show("You are offline", "long", "center");
@@ -80,16 +85,16 @@ constructor(public navCtrl: NavController, private platform: Platform, public al
       this.storage.get('userid').then((userid) => {
         this.usrid = userid;
         if (this.usrid != null) {
-          this.http.get('http://api.movies4star.com/addRecent?id=' + this.usrid + '&slug=' + this.slug).map(res => res.json()).subscribe(data => {
+          this.http.get('http://api.movies4star.xyz/addRecent?id=' + this.usrid + '&slug=' + this.slug).map(res => res.json()).subscribe(data => {
           
           }
           );
         }
       });
-      this.http.get('http://api.movies4star.com/videos_front?slug=' + this.slug).map(res => res.json()).subscribe(data => {
+      this.http.get('http://api.movies4star.xyz/videos_front?slug=' + this.slug).map(res => res.json()).subscribe(data => {
         setTimeout(() => {
           this.imgurl=data.movieImage;
-          StreamingMedia.playVideo(this.cameraSrc) ;
+          StreamingMedia.playVideo(this.cameraSrc);
           Insomnia.keepAwake().then(() => 
                     
               this.cameraSrc = data.playlink,
@@ -97,8 +102,7 @@ constructor(public navCtrl: NavController, private platform: Platform, public al
           ); 
           
           this.cameraSrc = data.playlink;
-          this.relatedOnes = data.related_movies;  
-          
+          this.relatedOnes = data.related_movies; 
           this.video = "Movies";
           loadingPopup.dismiss();
         }, 1000);
@@ -109,7 +113,7 @@ constructor(public navCtrl: NavController, private platform: Platform, public al
     }
     else {
       var slug1 = this.secondPassed = navParams.get("secondPassed");
-      this.http.get('http://api.movies4star.com/tr_front?slug=' + slug1).map(res => res.json()).subscribe(data => {
+      this.http.get('http://api.movies4star.xyz/tr_front?slug=' + slug1).map(res => res.json()).subscribe(data => {
         setTimeout(() => {
             this.cameraSrc = data.playlink,
             this.cameraSrcc = "https://www.youtube.com/embed/" + this.cameraSrc;
@@ -133,85 +137,9 @@ constructor(public navCtrl: NavController, private platform: Platform, public al
 /*******VideoPlayer ********/
 
 
-stop(){
-  this.videoos=document.getElementById('video1'); 
+  videoclick(a, b, idd) {
+  this.videoos=document.getElementById(idd); 
   this.videoos.pause();
-  this.videoos.currentTime=0; 
-  var btn=document.getElementById("play");
-      btn.innerHTML= "<img src='img/play.png'/>";
-}
-
-playPause(){
-  this.videoos=document.getElementById('video1');  
-  var btn=document.getElementById("play");
-  if(this.videoos.paused===false){
-     this.videoos.pause();
-      btn.innerHTML= "<img src='img/play.png'/>";
-   
-  }
-  else{
-  this.videoos.play();
-  btn.innerHTML= "<img src='img/pause.png'/>";
-     
-  }
-} 
-
-fullscreen(){
-    this.videoos=document.getElementById('video1');  
-
-      if ( this.videoos.requestFullscreen) {
-        this.videoos.requestFullscreen();
-      } else if ( this.videoos.msRequestFullscreen) {
-        this.videoos.msRequestFullscreen();
-      } else if ( this.videoos.mozRequestFullScreen) {
-        this.videoos.mozRequestFullScreen();
-      } else if (this.videoos.webkitRequestFullscreen) {
-        this.videoos.webkitRequestFullscreen();
-      }
-
-}
-
-rewind(){
-    this.videoos.currentTime-=10; 
-}
-
-forward(){
-   this.videoos.currentTime+=10; 
-}
-
-setVolume(value){
-  this.videoos=document.getElementById('video1');  
-  var vol=this.videoos.volume;
-  vol+=value;
-  if(vol>=0 && vol <=1){
-    this.videoos.volume=vol;
-  }
-  else{
-    this.videoos.volume= (vol<0) ? 0:1;
-  }
-}
-
-enableMute(){
-     this.videoos=document.getElementById('video1');  
-
-  var button=document.getElementById("mute");
-  if(this.videoos.mute=='true'){
-    this.videoos.mute=false;
-    button.innerHTML= "<img src='img/mute.png'/>";
-  }
-  else{
-    this.videoos.mute=true;
-    button.innerHTML= "<img src='img/unmute.png'/>";
-  }
-}
-
-/*******VideoPlayer ********/
-  redirect(){
-    this.navCtrl.push(Page1);
-  }
-
-
-  videoclick(a, b) {
      this.navCtrl.push(Page2, {
       firstPassed: a,
       secondPassed: b,
@@ -252,7 +180,7 @@ enableMute(){
         {
           text: 'Submit',
           handler: data => {
-            this.http.get('http://api.movies4star.com/reportMovie?name=' + data.name + "&email=" + data.email + "&movie_name=" + data.moviename + "&comments=" + data.message).map(res => res.json()).subscribe(data => {
+            this.http.get('http://api.movies4star.xyz/reportMovie?name=' + data.name + "&email=" + data.email + "&movie_name=" + data.moviename + "&comments=" + data.message).map(res => res.json()).subscribe(data => {
               this.movie = data;
               if (this.movie.success == "Sucess") {
                 this.platform.ready().then(() => {

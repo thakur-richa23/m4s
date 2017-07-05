@@ -35,7 +35,7 @@ export class FavouritePage {
     this.storage.get('userid').then((userid) => {
       this.usrid = userid;
 
-      this.http.get('http://api.movies4star.com/fetchFavorite&id=' + this.usrid).map(res => res.json()).subscribe(data => {
+      this.http.get('http://api.movies4star.xyz/fetchFavorite&id=' + this.usrid).map(res => res.json()).subscribe(data => {
         this.items = data;
 
       });
@@ -45,7 +45,7 @@ export class FavouritePage {
   doInfinite(infiniteScroll, navParams: NavParams) {
     this.storage.get('userid').then((userid) => {
       this.usrid = userid;
-      this.http.get('http://api.movies4star.com/fetchFavorite&id=' + this.usrid).map(res => res.json()).subscribe(data => {
+      this.http.get('http://api.movies4star.xyz/fetchFavorite&id=' + this.usrid).map(res => res.json()).subscribe(data => {
         this.items = data;
       });
     });

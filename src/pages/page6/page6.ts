@@ -35,7 +35,7 @@ export class Page6 {
     var offsetlimit = 0;
     this.catoffset.push(allCategories);
     this.catoffset.push(offsetlimit);
-    this.http.get('http://api.movies4star.com/catMovies?slug=' + allCategories + '&offset=' + offsetlimit).map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/catMovies?slug=' + allCategories + '&offset=' + offsetlimit).map(res => res.json()).subscribe(data => {
      
           this.items = data;
       if (data.length == 0 && data != '') {
@@ -63,7 +63,7 @@ export class Page6 {
     var newmoviesoffset = Number(moviesOffset) + 10;
     this.catoffset.push(newmoviesoffset);
 
-    this.http.get('http://api.movies4star.com/catMovies?slug=' + allCat + '&offset=' + newmoviesoffset).map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/catMovies?slug=' + allCat + '&offset=' + newmoviesoffset).map(res => res.json()).subscribe(data => {
       this.itemss = data;
     });
      if(this.itemss.length!=0){

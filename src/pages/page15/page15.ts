@@ -27,7 +27,7 @@ export class Page15 {
           window.plugins.toast.show("You are online", "long", "center");
         });
     });
-    this.http.get('http://api.movies4star.com/allCategories').map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/allCategories').map(res => res.json()).subscribe(data => {
       this.allCategories = data;
     });
 
