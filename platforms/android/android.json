@@ -67,14 +67,6 @@
                     ],
                     "/manifest": [
                         {
-                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.USE_CREDENTIALS\" />",
-                            "count": 1
-                        },
-                        {
                             "xml": "<uses-permission android:name=\"com.amazon.device.messaging.permission.RECEIVE\" />",
                             "count": 1
                         },
@@ -84,6 +76,14 @@
                         },
                         {
                             "xml": "<uses-permission android:name=\"app.movies4star.com.permission.RECEIVE_ADM_MESSAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.USE_CREDENTIALS\" />",
                             "count": 1
                         }
                     ]
@@ -97,51 +97,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"AppUpdate\"><param name=\"android-package\" value=\"com.vaenow.appupdate.android.CheckAppUpdate\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"AppVersion\"><param name=\"android-package\" value=\"uk.co.whiteoctober.cordova.AppVersion\" /></feature>",
                             "count": 1
                         },
                         {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"android-package\" value=\"org.apache.cordova.facebook.ConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://m.facebook.com\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://graph.facebook.com\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://api.facebook.com\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://*.fbcdn.net\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://*.akamaihd.net\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"android-minSdkVersion\" value=\"15\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"GooglePlus\"><param name=\"android-package\" value=\"nl.xservices.plugins.GooglePlus\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://accounts.google.com/*\" />",
                             "count": 1
                         },
                         {
@@ -183,6 +143,50 @@
                         {
                             "xml": "<feature name=\"OneSignalPush\"><param name=\"android-package\" value=\"com.plugin.gcm.OneSignalPush\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AppUpdate\"><param name=\"android-package\" value=\"com.vaenow.appupdate.android.CheckAppUpdate\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"GooglePlus\"><param name=\"android-package\" value=\"nl.xservices.plugins.GooglePlus\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://accounts.google.com/*\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"android-package\" value=\"org.apache.cordova.facebook.ConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://m.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://graph.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://api.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.fbcdn.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.akamaihd.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"android-minSdkVersion\" value=\"15\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -191,11 +195,11 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"RareloopAppVersion\"><param name=\"android-package\" value=\"com.rareloop.cordova.appversion.RareloopAppVersion\" /></feature>",
+                            "xml": "<feature name=\"Diagnostic\"><param name=\"android-package\" value=\"cordova.plugins.Diagnostic\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Diagnostic\"><param name=\"android-package\" value=\"cordova.plugins.Diagnostic\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "xml": "<feature name=\"RareloopAppVersion\"><param name=\"android-package\" value=\"com.rareloop.cordova.appversion.RareloopAppVersion\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -209,7 +213,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<string name=\"fb_app_name\">MoviesforStar</string>",
+                            "xml": "<string name=\"fb_app_name\">m4s</string>",
                             "count": 1
                         }
                     ]
@@ -224,12 +228,6 @@
         "cordova-plugin-admobpro": {
             "PACKAGE_NAME": "app.movies4star.com"
         },
-        "cordova-plugin-appversion": {
-            "PACKAGE_NAME": "app.movies4star.com"
-        },
-        "cordova-plugin-app-update": {
-            "PACKAGE_NAME": "app.movies4star.com"
-        },
         "cordova-plugin-app-version": {
             "PACKAGE_NAME": "app.movies4star.com"
         },
@@ -237,14 +235,6 @@
             "PACKAGE_NAME": "app.movies4star.com"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "app.movies4star.com"
-        },
-        "cordova-plugin-facebook4": {
-            "APP_ID": "218325921972043",
-            "APP_NAME": "MoviesforStar",
-            "PACKAGE_NAME": "app.movies4star.com"
-        },
-        "cordova-plugin-googleplus": {
             "PACKAGE_NAME": "app.movies4star.com"
         },
         "cordova-plugin-insomnia": {
@@ -279,6 +269,23 @@
         },
         "onesignal-cordova-plugin": {
             "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-appversion": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-app-update": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-googleplus": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "218325921972043",
+            "APP_NAME": "m4s",
+            "PACKAGE_NAME": "app.movies4star.com"
         }
     },
     "dependent_plugins": {},
@@ -289,22 +296,6 @@
             "pluginId": "cordova-plugin-admobpro",
             "clobbers": [
                 "window.AdMob"
-            ]
-        },
-        {
-            "id": "cordova-plugin-appversion.RareloopAppVersion",
-            "file": "plugins/cordova-plugin-appversion/www/app-version.js",
-            "pluginId": "cordova-plugin-appversion",
-            "clobbers": [
-                "AppVersion"
-            ]
-        },
-        {
-            "id": "cordova-plugin-app-update.AppUpdate",
-            "file": "plugins/cordova-plugin-app-update/www/AppUpdate.js",
-            "pluginId": "cordova-plugin-app-update",
-            "clobbers": [
-                "AppUpdate"
             ]
         },
         {
@@ -321,22 +312,6 @@
             "pluginId": "cordova-plugin-device",
             "clobbers": [
                 "device"
-            ]
-        },
-        {
-            "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
-            "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
-            "pluginId": "cordova-plugin-facebook4",
-            "clobbers": [
-                "facebookConnectPlugin"
-            ]
-        },
-        {
-            "id": "cordova-plugin-googleplus.GooglePlus",
-            "file": "plugins/cordova-plugin-googleplus/www/GooglePlus.js",
-            "pluginId": "cordova-plugin-googleplus",
-            "clobbers": [
-                "window.plugins.googleplus"
             ]
         },
         {
@@ -443,18 +418,55 @@
             "clobbers": [
                 "OneSignal"
             ]
+        },
+        {
+            "id": "cordova-plugin-appversion.RareloopAppVersion",
+            "file": "plugins/cordova-plugin-appversion/www/app-version.js",
+            "pluginId": "cordova-plugin-appversion",
+            "clobbers": [
+                "AppVersion"
+            ]
+        },
+        {
+            "id": "cordova-plugin-app-update.AppUpdate",
+            "file": "plugins/cordova-plugin-app-update/www/AppUpdate.js",
+            "pluginId": "cordova-plugin-app-update",
+            "clobbers": [
+                "AppUpdate"
+            ]
+        },
+        {
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
+        },
+        {
+            "id": "cordova-plugin-googleplus.GooglePlus",
+            "file": "plugins/cordova-plugin-googleplus/www/GooglePlus.js",
+            "pluginId": "cordova-plugin-googleplus",
+            "clobbers": [
+                "window.plugins.googleplus"
+            ]
+        },
+        {
+            "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+            "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+            "pluginId": "cordova-plugin-facebook4",
+            "clobbers": [
+                "facebookConnectPlugin"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-extension": "1.5.1",
         "cordova-plugin-admobpro": "2.28.3",
-        "cordova-plugin-appversion": "1.0.0",
-        "cordova-plugin-app-update": "1.3.9",
         "cordova-plugin-app-version": "0.1.9",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-device": "1.1.4",
-        "cordova-plugin-facebook4": "1.7.4",
-        "cordova-plugin-googleplus": "5.1.1",
         "cordova-plugin-insomnia": "4.3.0",
         "cordova-plugin-nativestorage": "2.2.1",
         "cordova-plugin-network-information": "1.3.1",
@@ -465,6 +477,11 @@
         "cordova-sqlite-storage": "2.0.3",
         "cordova.plugins.diagnostic": "3.4.2",
         "ionic-plugin-keyboard": "2.2.1",
-        "onesignal-cordova-plugin": "2.1.2"
+        "onesignal-cordova-plugin": "2.1.2",
+        "cordova-plugin-appversion": "1.0.0",
+        "cordova-plugin-app-update": "1.3.9",
+        "cordova-plugin-inappbrowser": "1.7.1",
+        "cordova-plugin-googleplus": "5.1.1",
+        "cordova-plugin-facebook4": "1.7.4"
     }
 }

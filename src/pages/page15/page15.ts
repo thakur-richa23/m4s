@@ -39,6 +39,6 @@ export class Page15 {
     });
   }
   redirect(){
-    this.navCtrl.push(Page1);
+    this.navCtrl.setRoot(Page1);
   }
 }

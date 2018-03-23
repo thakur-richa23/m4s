@@ -47,26 +47,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-googleplus": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/EddyVerbruggen/cordova-plugin-googleplus",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "cordova-plugin-facebook4": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-facebook4"
-        },
-        "is_top_level": true,
-        "variables": {
-            "APP_ID": "218325921972043",
-            "APP_NAME": "MoviesforStar"
-        }
-    },
     "cordova-plugin-nativestorage": {
         "source": {
             "type": "registry",
@@ -141,14 +121,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-app-update": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-app-update"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-appversion": {
         "source": {
             "type": "registry",
@@ -180,5 +152,42 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-app-update": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-app-update"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser@1.7.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-googleplus": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-googleplus"
+        },
+        "is_top_level": true,
+        "variables": {
+            "REVERSED_CLIENT_ID": "com.googleusercontent.apps.350915099440-8aj41t0bbt8ie8r9cc84c9a82oiev0g3"
+        }
+    },
+    "cordova-plugin-facebook4": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-facebook4@~1.7.4"
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_ID": "218325921972043",
+            "APP_NAME": "m4s"
+        }
     }
 }

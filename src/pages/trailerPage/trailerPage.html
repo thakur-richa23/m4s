@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-navbar color="custom-color" >
+        <ion-title>
+            <img alt="Company Logo" height="40px" src="img/logo.gif">
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="a">
+<div style="position:fixed;width: 100%;">
+
+<iframe width="100%" height="190" [src]="url" frameborder="0" allowfullscreen></iframe>
+</div>
+
+ <div class="list4">
+        <ion-list class="list2" *ngFor="let resultitem of relatedOnes">
+            <ion-item class="item1" (click)="videoclick(resultitem.MovieSlug,resultitem.TrailorSlug,imgurl)">
+                <ion-thumbnail item-left>
+                    <img [src]='resultitem.MovieImage'>
+                </ion-thumbnail>
+                <h2>{{resultitem.MovieTitle}}</h2>
+                <h2 *ngIf="!resultitem.MovieTitle">{{resultitem.TrailorTitle}}</h2>
+                <p>{{resultitem.MovieReleaseDate}}</p>
+                <p *ngIf="!resultitem.MovieReleaseDate">{{resultitem.TrailorReleaseDate}}</p>
+
+            </ion-item>
+        </ion-list>
+    </div>
+
+    <!-- <ion-row style="margin-top:0px;background-image: url(img/adds.jpg); background-size: cover; margin-top:20px;position:fixed;bottom:0px;"> <img [src]='adtext' (click)="banner(adlink)" style="height: 54px; margin: 0 auto;"/></ion-row> -->
+</ion-content>

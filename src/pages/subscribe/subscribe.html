@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>subscribe</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-item>
+    <ion-input type="email" placeholder="Enter Email Here" name = "data.email" [(ngModel)]="data.email"></ion-input>
+</ion-item>
+  <button ion-button small (click)="sub(data.email)">Submit</button>
+</ion-content>

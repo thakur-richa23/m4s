@@ -10,9 +10,6 @@
         "cordova-plugin-admobpro": {
             "PACKAGE_NAME": "app.movies4star.com"
         },
-        "cordova-plugin-app-update": {
-            "PACKAGE_NAME": "app.movies4star.com"
-        },
         "cordova-plugin-app-version": {
             "PACKAGE_NAME": "app.movies4star.com"
         },
@@ -20,14 +17,6 @@
             "PACKAGE_NAME": "app.movies4star.com"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "app.movies4star.com"
-        },
-        "cordova-plugin-facebook4": {
-            "APP_ID": "218325921972043",
-            "APP_NAME": "MoviesforStar",
-            "PACKAGE_NAME": "app.movies4star.com"
-        },
-        "cordova-plugin-googleplus": {
             "PACKAGE_NAME": "app.movies4star.com"
         },
         "cordova-plugin-insomnia": {
@@ -61,6 +50,20 @@
             "PACKAGE_NAME": "app.movies4star.com"
         },
         "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-app-update": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-googleplus": {
+            "PACKAGE_NAME": "app.movies4star.com"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "218325921972043",
+            "APP_NAME": "m4s",
             "PACKAGE_NAME": "app.movies4star.com"
         }
     },

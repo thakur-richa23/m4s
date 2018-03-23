@@ -1,29 +1,20 @@
-
 <ion-header>
-
-    <ion-navbar>
-        <ion-title></ion-title>
-    </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
-    <p class="capital">Forgot Password</p>
+    <img alt="Company Logo" class="image" src="img/logo.gif">
+    <h3 class="capital">Forgot Password</h3>
     <ion-card class="card">
-        <ion-card-content class="card-content">
+        <ion-card-content>
             <ion-list>
-
                 <ion-item class="item">
                     <ion-label>Email</ion-label>
-                    <ion-input type="email" [(ngModel)]="forget.email"></ion-input>
+                    <ion-input type="email" [(ngModel)]="forget.email" style="color:white;"></ion-input>
                 </ion-item>
-
             </ion-list>
-
-            <div padding class="btn">
-                <button ion-button small outline class="button" (click)="forget_send()">Send</button>
-            </div>
         </ion-card-content>
     </ion-card>
+    <div padding class="btn">
+        <button ion-button small outline class="button" (click)="forget_send()">Send</button>
+    </div>
 </ion-content>

@@ -30,19 +30,19 @@ constructor(public navCtrl: NavController, public navParams: NavParams, private 
   }
 
   forget_send() {
-
-    this.http.get('http://movies4star.xyz/movies_Api.php?module=verifyEmail&email=' + this.forget.email).map(res => res.json()).subscribe(data => {
+    this.http.get('http://api.movies4star.xyz/verifyEmail?email=' + this.forget.email).map(res => res.json()).subscribe(data => {
       this.forget = data;
       if (this.forget.success == "Sucess") {
+        //alert("Please check your email");
         this.platform.ready().then(() => {
-          window.plugins.toast.show("Please check your email", "long", "center");
+        window.plugins.toast.show("Please check your email", "long", "center");
         });
-        this.navCtrl.push(NewpassPage, {
-        });
+        this.navCtrl.push(NewpassPage);
       } else {
         this.platform.ready().then(() => {
           window.plugins.toast.show("Enter valid email", "long", "center");
         });
+        //alert("Enter valid email");
       }
     });
   }

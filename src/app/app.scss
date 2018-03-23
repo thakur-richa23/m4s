@@ -6,6 +6,9 @@
 ion-loading.a {
     background: #000!important;
 }
+ion-loading.backg {
+    background: grey!important;
+}
 
 .toolbar-md-custom-color .bar-button-clear-md,
 .toolbar-md-custom-color .bar-button-default-md,
@@ -49,6 +52,13 @@ ion-loading.a {
 
 .label-md {
     padding-left: 10px;
+}
+.alert-md .alert-title {
+    font-size: 20px;
+    }
+.alert-md .alert-head {
+    background-color: teal;
+    color:white;
 }
 
 //.toolbar-background-md{background:linear-gradient(45deg, #b4dcf9 0%, #50b7ff 100%);}

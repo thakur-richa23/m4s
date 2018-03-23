@@ -1,11 +1,11 @@
 page-newpass {
 .card{
-        background-color:rgba(255, 255, 255, 0.5);
+        background-color:#003b64;
         margin-top:50px;
         border-radius:10px;
     }
     .card-content{
-        height:320px;
+        height:240px;
     }
     .item{
         margin-top:20px;
@@ -21,19 +21,23 @@ page-newpass {
         width:80px;
         height:40px;
         font-size:16px;
-        background-color:darkkhaki; 
+        background-color:rgb(0, 59, 100); 
         text-align:center;
         border-radius:10px;
-        color:black;
+        color:white;
     }
     .btn{
         text-align:center;
         
     }
     .capital{
-        color:#c7c390;
+        color:#003b64;
         text-align:center;
-        font-size:24px;
-        font-style: italic;
+        margin-top:30px;
+    }
+    .image{
+        height:40px;
+        margin: 1em 8em;
+        margin-top: 30px;
     }
 }

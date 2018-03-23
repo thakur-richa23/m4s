@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { Platform } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { Http } from '@angular/http';
+import {Page4} from '../page4/page4';
 import { Network } from 'ionic-native';
 import 'rxjs/add/operator/map';
 
@@ -33,14 +34,16 @@ export class NewpassPage {
   }
   confirm_pass() {
     if (this.confirm.pass == this.confirm.con_pass) {
-
-      this.http.get('http://movies4star.xyz/movies_Api.php?module=recoverPassword&otp=' + this.confirm.otp + "&password=" + this.confirm.pass).map(res => res.json()).subscribe(data => {
+      this.http.get('http://api.movies4star.xyz/recoverPassword?otp=' + this.confirm.otp + "&password=" + this.confirm.pass).map(res => res.json()).subscribe(data => {
         this.confirm = data;
+        //alert("Password successfully changed");
         this.platform.ready().then(() => {
           window.plugins.toast.show("Password successfully changed", "long", "center");
         });
+        this.navCtrl.push(Page4);
       });
     } else {
+      //alert("Password doesn't match");
       this.platform.ready().then(() => {
         window.plugins.toast.show("Password doesn't match", "long", "center");
       });

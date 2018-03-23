@@ -9,22 +9,6 @@ module.exports = [
         ]
     },
     {
-        "id": "cordova-plugin-appversion.RareloopAppVersion",
-        "file": "plugins/cordova-plugin-appversion/www/app-version.js",
-        "pluginId": "cordova-plugin-appversion",
-        "clobbers": [
-            "AppVersion"
-        ]
-    },
-    {
-        "id": "cordova-plugin-app-update.AppUpdate",
-        "file": "plugins/cordova-plugin-app-update/www/AppUpdate.js",
-        "pluginId": "cordova-plugin-app-update",
-        "clobbers": [
-            "AppUpdate"
-        ]
-    },
-    {
         "id": "cordova-plugin-app-version.AppVersionPlugin",
         "file": "plugins/cordova-plugin-app-version/www/AppVersionPlugin.js",
         "pluginId": "cordova-plugin-app-version",
@@ -38,22 +22,6 @@ module.exports = [
         "pluginId": "cordova-plugin-device",
         "clobbers": [
             "device"
-        ]
-    },
-    {
-        "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
-        "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
-        "pluginId": "cordova-plugin-facebook4",
-        "clobbers": [
-            "facebookConnectPlugin"
-        ]
-    },
-    {
-        "id": "cordova-plugin-googleplus.GooglePlus",
-        "file": "plugins/cordova-plugin-googleplus/www/GooglePlus.js",
-        "pluginId": "cordova-plugin-googleplus",
-        "clobbers": [
-            "window.plugins.googleplus"
         ]
     },
     {
@@ -160,6 +128,47 @@ module.exports = [
         "clobbers": [
             "OneSignal"
         ]
+    },
+    {
+        "id": "cordova-plugin-appversion.RareloopAppVersion",
+        "file": "plugins/cordova-plugin-appversion/www/app-version.js",
+        "pluginId": "cordova-plugin-appversion",
+        "clobbers": [
+            "AppVersion"
+        ]
+    },
+    {
+        "id": "cordova-plugin-app-update.AppUpdate",
+        "file": "plugins/cordova-plugin-app-update/www/AppUpdate.js",
+        "pluginId": "cordova-plugin-app-update",
+        "clobbers": [
+            "AppUpdate"
+        ]
+    },
+    {
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "pluginId": "cordova-plugin-inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
+        "id": "cordova-plugin-googleplus.GooglePlus",
+        "file": "plugins/cordova-plugin-googleplus/www/GooglePlus.js",
+        "pluginId": "cordova-plugin-googleplus",
+        "clobbers": [
+            "window.plugins.googleplus"
+        ]
+    },
+    {
+        "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+        "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+        "pluginId": "cordova-plugin-facebook4",
+        "clobbers": [
+            "facebookConnectPlugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -167,13 +176,9 @@ module.exports.metadata =
 {
     "cordova-plugin-extension": "1.5.1",
     "cordova-plugin-admobpro": "2.28.3",
-    "cordova-plugin-appversion": "1.0.0",
-    "cordova-plugin-app-update": "1.3.9",
     "cordova-plugin-app-version": "0.1.9",
     "cordova-plugin-console": "1.0.5",
     "cordova-plugin-device": "1.1.4",
-    "cordova-plugin-facebook4": "1.7.4",
-    "cordova-plugin-googleplus": "5.1.1",
     "cordova-plugin-insomnia": "4.3.0",
     "cordova-plugin-nativestorage": "2.2.1",
     "cordova-plugin-network-information": "1.3.1",
@@ -184,7 +189,12 @@ module.exports.metadata =
     "cordova-sqlite-storage": "2.0.3",
     "cordova.plugins.diagnostic": "3.4.2",
     "ionic-plugin-keyboard": "2.2.1",
-    "onesignal-cordova-plugin": "2.1.2"
+    "onesignal-cordova-plugin": "2.1.2",
+    "cordova-plugin-appversion": "1.0.0",
+    "cordova-plugin-app-update": "1.3.9",
+    "cordova-plugin-inappbrowser": "1.7.1",
+    "cordova-plugin-googleplus": "5.1.1",
+    "cordova-plugin-facebook4": "1.7.4"
 };
 // BOTTOM OF METADATA
 });

@@ -1,17 +1,13 @@
 <ion-header>
-
-    <ion-navbar>
-    </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-    <p class="capital">Confirm Password</p>
+    <img alt="Company Logo" class="image" src="img/logo.gif">
+    <h3 class="capital">Confirm Password</h3>
     <ion-card class="card">
-        <ion-card-content class="card-content">
+        <ion-card-content >
             <ion-list>
-
                 <ion-item class="item">
                     <ion-label>OTP</ion-label>
                     <ion-input type="number" [(ngModel)]="confirm.otp"></ion-input>
@@ -26,13 +22,11 @@
                     <ion-label>Confirm Password</ion-label>
                     <ion-input type="password" [(ngModel)]="confirm.con_pass"></ion-input>
                 </ion-item>
-
-
             </ion-list>
 
-            <div padding class="btn">
-                <button ion-button small outline class="button" (click)="confirm_pass()">Send</button>
-            </div>
         </ion-card-content>
     </ion-card>
+    <div padding class="btn">
+        <button ion-button small outline class="button" (click)="confirm_pass()">Send</button>
+    </div>
 </ion-content>

@@ -14,15 +14,14 @@
                 <img style="height:100%;" [src]='i.MovieImage'>
             </ion-thumbnail>
             <h2 class="heading-top">{{i.MovieTitle}}</h2>
-            <h2 class="heading-top" *ngIf="allTypesOfMovies == 'Upcoming-Trailer'">{{i.TrailorTitle}}</h2>
+            <h2 class="heading-top" *ngIf="allTypesOfMovies == 'Upcoming-Trailer' || allTypesOfMovies == 'trailers'">{{i.TrailorTitle}}</h2>
             <p class="paragrah-top">{{i.MovieDate}}</p>
-            <p class="paragrah-top" *ngIf="allTypesOfMovies == 'Upcoming-Trailer'">{{i.TrailorDate}}</p>
+            <p class="paragrah-top" *ngIf="allTypesOfMovies == 'Upcoming-Trailer' || allTypesOfMovies == 'trailers'">{{i.TrailorDate}}</p>
         </ion-item>
     </ion-list>
     <p>{{load}}</p>
     <ion-infinite-scroll (ionInfinite)="doInfinite($event)" >
-        <ion-infinite-scroll-content  loadingSpinner="bubbles"
-      loadingText="Loading">
+        <ion-infinite-scroll-content  loadingSpinner="bubbles" loadingText="Loading">
         </ion-infinite-scroll-content>
     </ion-infinite-scroll>
 </ion-content>

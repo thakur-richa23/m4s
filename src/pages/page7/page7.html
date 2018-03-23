@@ -1,29 +1,26 @@
 <ion-header>
     <ion-navbar color="custom-color">
-        <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
         <ion-title>
-            <img alt="Company Logo" height="40px" (click)="redirect()"  src="img/logo.gif">
+            <img alt="Company Logo" height="40px" src="img/logo.gif">
         </ion-title>
     </ion-navbar>
 </ion-header>
 <ion-content class="a" style="background: #000;">
-    <img *ngIf="moviesvisual.MovieImage" [src]='moviesvisual.MovieImage' style="position: absolute; top: 0;right: 0; left: 0; bottom: 0; width: 100%;opacity: 0.2;" />
+    <img [src]='moviesvisual.MovieImage' style="position: absolute; top: 0;right: 0; left: 0; bottom: 0; width: 100%;opacity: 0.2;" />
     <img *ngIf="!moviesvisual.MovieImage" [src]='moviesvisual.TrailerImage' style="position: absolute; top: 0;right: 0; left: 0; bottom: 0; width: 100%;opacity: 0.2;" />
     <br>
     <div *ngIf="moviesvisual.MovieImage" style="margin:auto;display:block;width:150px;height:228px;position: relative; ">
-        <img *ngIf="moviesvisual.MovieImage" [src]='moviesvisual.MovieImage' class="imggg" style="margin:auto;display:block;width:150px;height:268px;" />
+        <img *ngIf="moviesvisual.MovieImage" [src]='moviesvisual.MovieImage' class="imggg" style="margin:auto;display:block;width:150px;height:250px;" />
         <img *ngIf="moviesvisual.MovieImage" (click)="jumpToPlay(moviesvisual.MovieSlug)" src="img/playicon.png" style="font-size:10px; padding:7px;letter-spacing:-4px; position: absolute;top: 120%;right:-28px;left:13%; z-index: 9; width:56px; height:56px;" />
         <img *ngIf="moviesvisual.MovieImage" (click)="jumpTofav(moviesvisual.MovieSlug)" src="img/fav.png" style="font-size:10px; padding:7px;letter-spacing:-4px; position: absolute;top: 120%;right:-28px; left:49%; z-index: 9; width:56px; height:56px;" />
     </div>
 
     <div *ngIf="!moviesvisual.MovieSlug" style="margin:auto;display:block;width:150px;height:228px;position: relative; ">
-        <img *ngIf="!moviesvisual.MovieImage" [src]='moviesvisual.TrailerImage' class="imggg" style="margin:auto;display:block;width:150px;height:268px;" />
-        <img *ngIf="!moviesvisual.MovieSlug" (click)="jumpTotrailer(moviesvisual.TrailorSlug)" src="img/playicon.png" style="font-size:10px; padding:7px;letter-spacing:-4px; position: absolute;top: 120%;right:-28px; left:13%; z-index: 9; width:56px; height:56px;"
-        />
+        <img *ngIf="!moviesvisual.MovieImage" [src]='moviesvisual.TrailerImage' class="imggg" style="margin:auto;display:block;width:150px;height:250px;" />
+        <img *ngIf="!moviesvisual.MovieSlug" (click)="jumpTotrailer(moviesvisual.TrailorSlug)" src="img/playicon.png" style="font-size:10px; padding:7px;letter-spacing:-4px; position: absolute;top: 120%;right:-28px; left:13%; z-index: 9; width:56px; height:56px;"/>
         <img *ngIf="!moviesvisual.MovieImage" (click)="jumpTofav(moviesvisual.TrailorSlug)" src="img/fav.png" style="font-size:10px; padding:7px;letter-spacing:-4px; position: absolute;top: 120%;right:-28px; left:49%; z-index: 9; width:56px; height:56px;" />
-    </div><br><br><br>
+    </div>
+    <br><br><br>
     <div style="text-align: center; font-size: 16px; margin-top: 50px;">
         <h5 style="color: teal;">Cast & Crew</h5>
         <p style="color: #fff; font-size: 12px;">{{ moviesvisual.MovieStarCast }} </p>
@@ -32,4 +29,6 @@
         <p style="color: #fff;  font-size: 12px;">{{ moviesvisual.MovieDescription }}</p>
         <p style="color: #fff;  font-size: 12px;" *ngIf="!moviesvisual.MovieDescription">{{ moviesvisual.TrailorDescription }}</p>
     </div>
+
+    <!-- <ion-row style="margin-top:0px;background-image: url(img/adds.jpg); background-size: cover; margin-top:20px;position:fixed;bottom:0px;"> <img [src]='adtext' (click)="banner(adlink)" style="height: 54px; margin: 0 auto;width: 90%;"/></ion-row> -->
 </ion-content>

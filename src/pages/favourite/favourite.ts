@@ -47,6 +47,7 @@ export class FavouritePage {
       this.usrid = userid;
       this.http.get('http://api.movies4star.xyz/fetchFavorite&id=' + this.usrid).map(res => res.json()).subscribe(data => {
         this.items = data;
+        
       });
     });
 
@@ -57,6 +58,7 @@ export class FavouritePage {
 
       infiniteScroll.complete();
     }, 500);
+    
   }
 
   openMovieinfo(abc, type) {

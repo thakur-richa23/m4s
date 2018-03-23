@@ -32,21 +32,23 @@ export class OndemandPage {
     this.movie.category = '';
     this.movie.message = '';
   }
+
   demandsubmit() {
     this.http.get('http://api.movies4star.xyz/movieOnDemand&name=' + this.movie.name + "&email=" + this.movie.email + "&movie=" + this.movie.moviename + "&language=" + this.movie.language + "&year=" + this.movie.year + "&category=" + this.movie.category + "&message=" + this.movie.message).map(res => res.json()).subscribe(data => {
       this.data = data;
       if (this.data.status == "success") {
+        //alert("Your Message has been sent Successfully");
         this.platform.ready().then(() => {
           window.plugins.toast.show("Your Message has been sent Successfully", "long", "center");
         });
       } else {
+        //alert("Your Message not sent Successfully");
         this.platform.ready().then(() => {
           window.plugins.toast.show("Your Message not sent Successfully", "long", "center");
         });
       }
       window.location.reload(true);
-      this.navCtrl.push(OndemandPage, {
-      });
+      this.navCtrl.push(OndemandPage);
     });
 
   }

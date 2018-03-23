@@ -3,5 +3,10 @@ page-page10 {
  .scroll-content {
     background: linear-gradient(45deg, #0083e0 0%, #003b64 100%); 
 }
-.card-md{ background:rgba(255, 255, 255, 0.17);}
+.card-md{ background-color: rgba(255, 255, 255, 0.4);}
+ion-card img {
+    display: block;
+    width: 50%;
+
+}
 }

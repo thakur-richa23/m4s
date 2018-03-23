@@ -1,34 +1,25 @@
 <ion-header>
-    <ion-navbar color="custom-color">
-    </ion-navbar>
-
 </ion-header>
 <ion-content padding>
-    <h3>Create Account</h3>
-    <br>
-    <ion-list>
-        <ion-item>
-            <ion-label floating>Username</ion-label>
-            <ion-input type="text" name="username" [(ngModel)]="data.user_name"></ion-input>
+    <img alt="Company Logo" class="image" height="40px" src="img/logo.gif">
+      <ion-list style="margin-top: 20px;">
+        <ion-item class="item">
+            <ion-label class="lbl-mail">Username</ion-label>
+            <ion-input type="password" name="username" [(ngModel)]="data.user_name"></ion-input>
         </ion-item>
-
-        <ion-item>
-            <ion-label floating>Email</ion-label>
-            <ion-input type="email" name="email" [(ngModel)]="data.email"></ion-input>
+        <ion-item class="item">
+            <ion-label class="lbl-mail">Email</ion-label>
+            <ion-input style="padding-left:3em;" type="text" name="email" [(ngModel)]="data.email"></ion-input>
         </ion-item>
-
-
-        <ion-item>
-            <ion-label floating>Password</ion-label>
+        <ion-item class="item">
+            <ion-label class="lbl-pass">Password</ion-label>
             <ion-input type="password" [(ngModel)]="data.password"></ion-input>
         </ion-item>
-
-        <ion-item>
-            <ion-label floating>Confirm Password</ion-label>
-            <ion-input type="password" [(ngModel)]="data.confirm_password"></ion-input>
-        </ion-item>
+        <ion-item class="item">
+            <ion-label class="lbl-pass">Confirm Password</ion-label>
+            <ion-input  type="password" [(ngModel)]="data.confirm_password"></ion-input>
+        </ion-item>  
+        <button ion-button full round class="signupbtn" (click)="submit()">Sign up</button>
     </ion-list>
-    <div padding>
-        <button ion-button full Default (click)="submit()">Submit</button>
-    </div>
+    
 </ion-content>

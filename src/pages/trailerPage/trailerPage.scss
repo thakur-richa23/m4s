@@ -1,0 +1,13 @@
+page-trailerPage {
+.item-md h2{font-size:0.8em;white-space:initial;}
+.list2{margin-bottom:2px;}
+.list4{margin-top:11em; margin-bottom: 60px;}
+.list2:first-child{padding-top:5.5em;background:#fff;}
+@media(max-width:320px){.list4{margin-top:9.6em;}}
+@media(min-width:361px) and (max-width:375px){.list4{margin-top:10.6em;}}
+@media(min-width:376px) and (max-width:420px){.list4{margin-top:12.9em;}}
+@media(min-width:750px) and (max-width:780px){.list4{margin-top:22em;}}
+
+
+
+}

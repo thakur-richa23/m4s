@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import { MyApp } from './app.component';
 import { Page1,PopoverPage} from '../pages/page1/page1';
-import { Page2, PopoverPage1} from '../pages/page2/page2';
+import { Page2 } from '../pages/page2/page2';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { Page4 } from '../pages/page4/page4';
 import { Page5 } from '../pages/page5/page5';
@@ -13,10 +13,12 @@ import { Page9 } from '../pages/page9/page9';
 import { Page10 } from '../pages/page10/page10';
 import { Page15 } from '../pages/page15/page15';
 import { Page3 } from '../pages/page3/page3';
+import { TrailerPage } from '../pages/trailerPage/trailerPage';
 import { ContactPage } from '../pages/contact/contact';
 import { ForgetpassPage } from '../pages/forgetpass/forgetpass';
 import { NewpassPage } from '../pages/newpass/newpass';
 import { OndemandPage } from '../pages/ondemand/ondemand';
+import { SubscribePage } from '../pages/subscribe/subscribe';
 import { RecentplayPage } from '../pages/recentplay/recentplay';
 import { FavouritePage } from '../pages/favourite/favourite';
 import { Storage } from '@ionic/storage';
@@ -24,6 +26,10 @@ import { Connect } from '../providers/connect';
 import { AdMob } from '@ionic-native/admob';
 import { AppUpdate } from '@ionic-native/app-update';
 import { VgCoreModule } from 'videogular2/core';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { Facebook } from '@ionic-native/facebook';
+// import { GooglePlus } from '@ionic-native/google-plus';
+// import { NativeStorage } from '@ionic-native/native-storage'
 
 @NgModule({
   declarations: [
@@ -32,7 +38,7 @@ import { VgCoreModule } from 'videogular2/core';
     Page2,
     Page4,
     PopoverPage,
-    PopoverPage1,
+    //PopoverPage1,
     Page5,
     Page6,
     Page7,
@@ -41,12 +47,14 @@ import { VgCoreModule } from 'videogular2/core';
     Page10,
     Page15,
     Page3,
+  TrailerPage,
     ContactPage,
     ForgetpassPage,
     NewpassPage,
     OndemandPage,
     RecentplayPage,
-    FavouritePage
+    FavouritePage,
+    SubscribePage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -60,7 +68,7 @@ import { VgCoreModule } from 'videogular2/core';
     Page2,
     Page4,
     PopoverPage,
-    PopoverPage1,
+    //PopoverPage1,
     Page5,
     Page6,
     Page7,
@@ -69,13 +77,15 @@ import { VgCoreModule } from 'videogular2/core';
     Page10,
     Page15,
     Page3,
+    TrailerPage,
     ContactPage,
     ForgetpassPage,
     NewpassPage,
     OndemandPage,
     RecentplayPage,
-    FavouritePage
+    FavouritePage,
+    SubscribePage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Storage, Connect, StatusBar, Splashscreen, AppUpdate,AdMob]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Storage, Connect, StatusBar, Splashscreen, AppUpdate,AdMob, InAppBrowser, Facebook]
 })
 export class AppModule {}

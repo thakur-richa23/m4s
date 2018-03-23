@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild  } from '@angular/core';
+import { Content } from 'ionic-angular';
 import { Network } from 'ionic-native';
 import { Page2 } from '../page2/page2';
 import { Page4 } from '../page4/page4';
@@ -15,16 +16,22 @@ import { OndemandPage } from '../ondemand/ondemand';
 import { RecentplayPage } from '../recentplay/recentplay';
 import { FavouritePage } from '../favourite/favourite';
 import { GooglePlus } from 'ionic-native';
-import { NavController, Platform, LoadingController,ToastController, PopoverController, NavParams, ViewController, AlertController } from 'ionic-angular';
+import { NavController, Platform, LoadingController,ToastController, PopoverController, NavParams, ViewController, AlertController, MenuController  } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Storage } from '@ionic/storage';
 import { AppVersion } from 'ionic-native';
 import {OneSignal} from 'ionic-native';
 import {Device} from 'ionic-native';
+import { AdMob } from '@ionic-native/admob';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+import {App} from "ionic-angular";
 
 declare var window: any;
-
+interface AdMobtype{
+  banner:string,
+  interstitial:string
+}
 @Component({
   selector: 'page-page1',
   templateUrl: 'page1.html',
@@ -33,6 +40,7 @@ declare var window: any;
 })
 
 export class Page1 {
+  @ViewChild(Content) content: Content;
   Page2 = Page2;
   Page4 = Page4;
   Page6 = Page6;
@@ -46,7 +54,7 @@ export class Page1 {
   OndemandPage = OndemandPage;
   RecentplayPage = RecentplayPage;
   FavouritePage = FavouritePage;
-
+  movieresponse: any;
   posts: any;
   movieInfo: any;
   HollywoodTVShow: any;
@@ -56,6 +64,7 @@ export class Page1 {
   documentaryMovies: any;
   englishMovies: any;
   hindiMovies: any;
+  adtext:any;
   a: any;
   movies: any;
   test: any;
@@ -73,8 +82,35 @@ export class Page1 {
   };
   usrid: any;
   private storage: Storage;
-constructor(public nav: NavController, public Toast:ToastController,storage: Storage, public platform: Platform, private navParams: NavParams, public navCtrl: NavController, public popoverCtrl: PopoverController, private http: Http, private loadingCtrl: LoadingController, public alertCtrl: AlertController) {
-    Network.onDisconnect().subscribe(() => {
+  adlink:any;
+constructor(public nav: NavController,private iab: InAppBrowser, public menu: MenuController, private admob:AdMob,public Toast:ToastController,storage: Storage, public platform: Platform, private navParams: NavParams, public navCtrl: NavController, public popoverCtrl: PopoverController, private http: Http, private loadingCtrl: LoadingController, public alertCtrl: AlertController) {
+
+     platform.ready().then(() => {
+        var admobid: AdMobtype;
+        if (/(android)/i.test(navigator.userAgent)) {
+        admobid = { // for Android
+          banner: 'ca-app-pub-2266939936529282~3437745855',
+          interstitial: 'ca-app-pub-2266939936529282/1821411858'
+        };
+      } if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+        admobid = { // for iOS
+          banner: 'ca-app-pub-234234234234324/234234234234',
+          interstitial: 'ca-app-pub-234234234234324/234234234234'
+        };
+      } else {
+        admobid = { // for Windows Phone
+          banner: 'ca-app-pub-234234234234324/234234234234',
+          interstitial: 'ca-app-pub-234234234234324/234234234234'
+        };
+      }
+       this.admob.createBanner({
+        adId: admobid.banner,
+        //isTesting: true, //comment this out before publishing the app
+        autoShow: true
+      })
+    });
+    
+  Network.onDisconnect().subscribe(() => {
         this.platform.ready().then(() => {
           window.plugins.toast.show("You are offline", "long", "center");
         });
@@ -133,36 +169,27 @@ constructor(public nav: NavController, public Toast:ToastController,storage: Sto
 
     OneSignal.endInit();
   })
-    this.storage = storage;
+
+this.allcategory();
+  this.storage = storage;
     this.http.get('http://api.movies4star.xyz/slider_home').map(res => res.json()).subscribe(data => {
       this.posts = data;
 
     });
-    this.http.get('http://api.movies4star.xyz/all_movies_hd').map(res => res.json()).subscribe(data => {
-      this.movies = data;
-    });
-    this.http.get('http://api.movies4star.xyz/trailers_front').map(res => res.json()).subscribe(data => {
-      this.trailers = data;
-    });
-    this.http.get('http://api.movies4star.xyz/catMovies?slug=Punjabi-Movies').map(res => res.json()).subscribe(data => {
-      this.punjabiMovies = data;
-    });
-    this.http.get('http://api.movies4star.xyz/catMovies?slug=English-Movies').map(res => res.json()).subscribe(data => {
-      this.englishMovies = data;
-    });
-    this.http.get('http://api.movies4star.xyz/catMovies?slug=Hindi-Movies').map(res => res.json()).subscribe(data => {
-      this.hindiMovies = data;
-    });
-    this.http.get('http://api.movies4star.xyz/docMovies?slug=English-Dubbed-Movies').map(res => res.json()).subscribe(data => {
-      this.EngDubbedMovies = data;
-    });
-    this.http.get('http://api.movies4star.xyz/docMovies?slug=Hollywood-TV-Show').map(res => res.json()).subscribe(data => {
-      this.HollywoodTVShow = data;
-    });
-    this.http.get('http://api.movies4star.xyz/docMovies?slug=documentary').map(res => res.json()).subscribe(data => {
-      this.documentaryMovies = data;
-    });
+}
 
+allcategory(){
+     let loadingPopup = this.loadingCtrl.create({
+      content: ''
+    });
+    // Show the popup
+    loadingPopup.present();
+      this.http.get('http://api.movies4star.xyz/catMoviess').map(res => res.json()).subscribe(data => {
+      setTimeout(() => {
+       this.movieresponse = data;
+          loadingPopup.dismiss();
+          }, 1000);
+    });
   }
 
   submit(a) {
@@ -176,70 +203,30 @@ constructor(public nav: NavController, public Toast:ToastController,storage: Sto
     });
   }
 
-  /*----------------functions for More button functionality -----------------*/
-  allLatestMovies(b) {
-
-    this.navCtrl.push(Page6, {
-      allTypesOfMovies: b,
-
-    });
+  banner(link){
+var browser_link = this.iab.create(link);
   }
 
- allEnglishMovies(b) {
-    this.navCtrl.push(Page6, {
-      allTypesOfMovies: b,
-
-    });
-  }
-
-  allPunjabiMovies(b) {
+  allMovies(b) {
     this.navCtrl.push(Page6, {
       allTypesOfMovies: b,
     });
   }
 
-  allHindiMovies(b) {
-    this.navCtrl.push(Page6, {
-      allTypesOfMovies: b,
-    });
-  }
-
-  allEngDubbedMovies(b) {
-    this.navCtrl.push(Page6, {
-      allTypesOfMovies: b,
-    });
-  }
-
-  allTrailers(b) {
-    this.navCtrl.push(Page6, {
-      allTypesOfMovies: b,
-    });
-  }
-
-  allHollywoodTVShow(b) {
-    this.navCtrl.push(Page6, {
-      allTypesOfMovies: b,
-    });
-  }
-
-  documentary(b) {
-    this.navCtrl.push(Page6, {
-      allTypesOfMovies: b,
-    });
-  }
-
-  /*-----------------------------ends here-----------------------------*/
-  openMovieinfo(abc) {
-
-    this.navCtrl.push(Page7, {
-      movieInfo: abc,
-    });
-  }
-
-  openTrailerinfo(abc) {
-    this.navCtrl.push(Page7, {
-      trailerInfo: abc,
-    });
+  openMovieinfo(a,b) {
+    if(b == 'movies'){
+      // this.storage.set("trailerInfo", 0);
+      // this.storage.set("movieInfo", a);
+      this.navCtrl.push(Page7,{
+        movieInfo:a
+      });
+    }else{
+      // this.storage.set("movieInfo", 0);
+      // this.storage.set("trailerInfo", a);
+      this.navCtrl.push(Page7,{
+        trailerInfo:a
+      });
+    } 
   }
 
   comingsoon(b) {
@@ -249,6 +236,11 @@ constructor(public nav: NavController, public Toast:ToastController,storage: Sto
   }
 
   NowReleased(b) {
+    this.navCtrl.push(Page6, {
+      allTypesOfMovies: b,
+    });
+  }
+  mostview(b){
     this.navCtrl.push(Page6, {
       allTypesOfMovies: b,
     });
@@ -273,7 +265,7 @@ constructor(public nav: NavController, public Toast:ToastController,storage: Sto
   selector: 'ng-if-simple',
   template: `
    <div class="hh" style="width:100px;">
-    <ion-list  style="margin-bottom:0px; width:160px;">
+    <ion-list style="margin-bottom:0px; width:160px;">
       <button ion-item (click)="loginBtn()">Sign in</button>
       <button ion-item (click)="dmca()">DMCA</button>
       <button ion-item (click)="contact()">Contact Us</button>
@@ -281,6 +273,7 @@ constructor(public nav: NavController, public Toast:ToastController,storage: Sto
       <button ion-item (click)="ondemand()">On Demand</button>
       <button ion-item *ngIf="usrid!= null" (click)="recplayed()">Recently Played</button>
       <button ion-item *ngIf="usrid!= null" (click)="favourite()">Favourite Movies</button>
+      <button ion-item (click)="subscrb()">Subscribe</button>
     </ion-list>
     </div>
   `
@@ -288,21 +281,60 @@ constructor(public nav: NavController, public Toast:ToastController,storage: Sto
 export class PopoverPage {
   usrid: any;
   version:any;
+   email: any;
+   subscribe:any;
   private storage: Storage;
-  constructor(public viewCtrl: ViewController,public platform:Platform, private navParams: NavParams, public navCtrl: NavController, storage: Storage) {
+  constructor(public viewCtrl: ViewController, public app: App, private http: Http, public platform:Platform, private navParams: NavParams, public navCtrl: NavController, storage: Storage, public alertCtrl:AlertController) {
     this.storage = storage;
     this.storage.get('userid').then((userid) => {
       this.usrid = userid;
     })
       this.version="";
-              AppVersion.getVersionNumber().then((v)=>{
-              this.version=v;
-            })    
+        AppVersion.getVersionNumber().then((v)=>{
+        this.version=v;
+      })    
   }
 
   loginBtn() {
-    this.navCtrl.push(Page4, {
+     this.viewCtrl.dismiss().then(() => {
+      this.app.getRootNav().push(Page4);
     });
+  }
+
+  subscrb(){
+     let alert = this.alertCtrl.create({
+     title: 'Subscribe for Newsletter',
+     cssClass: 'abtn',
+      inputs: [
+        {
+          name: 'email',
+          placeholder: 'Email',
+          type: 'email',
+          value: this.email
+        }
+      ],
+      buttons: [
+        {
+          text: 'Submit',
+          handler: data => {
+            this.http.get('http://api.movies4star.xyz/subscribe?email='+ data.email).map(res => res.json()).subscribe(data => {
+              this.subscribe = data;
+              //console.log(this.subscribe.msg);
+              if (this.subscribe.msg == "saved") {
+                this.platform.ready().then(() => {
+                  window.plugins.toast.show("Thanks for Subscribing", "long", "center");
+                });
+              }else if(this.subscribe.msg == "already exist"){
+                this.platform.ready().then(() => {
+                  window.plugins.toast.show("already exist", "long", "center");
+                });
+              }
+            });
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
   dmca() {

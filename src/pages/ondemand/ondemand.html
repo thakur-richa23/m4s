@@ -1,56 +1,48 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar color="custom-color" >
+        <ion-title>
+            <img alt="Company Logo" height="40px" src="img/logo.gif">
+        </ion-title>
     </ion-navbar>
-
 </ion-header>
-
 
 <ion-content padding>
     <ion-card class="card">
-        <ion-card-content class="card-content">
+        <ion-card-content >
             <ion-list>
-
                 <ion-item class="item">
                     <ion-label>Name</ion-label>
                     <ion-input type="text" [(ngModel)]="movie.name"></ion-input>
-
                 </ion-item>
-
                 <ion-item class="item">
                     <ion-label>Email</ion-label>
                     <ion-input type="email" [(ngModel)]="movie.email"></ion-input>
                 </ion-item>
-
                 <ion-item class="item">
                     <ion-label>Movie name</ion-label>
                     <ion-input type="text" [(ngModel)]="movie.moviename"></ion-input>
                 </ion-item>
-
                 <ion-item class="item">
                     <ion-label>Language</ion-label>
                     <ion-input type="text" [(ngModel)]="movie.language"></ion-input>
                 </ion-item>
-
                 <ion-item class="item">
                     <ion-label>Year</ion-label>
                     <ion-input type="text" [(ngModel)]="movie.year"></ion-input>
                 </ion-item>
-
                 <ion-item class="item">
                     <ion-label>Category</ion-label>
                     <ion-input type="text" [(ngModel)]="movie.category"></ion-input>
                 </ion-item>
-
                 <ion-item>
                     <ion-label class="label">Your Message</ion-label>
-                    <ion-textarea rows="8" col="12" class="msg" [(ngModel)]="movie.message"></ion-textarea>
+                    <ion-textarea rows="5" col="8" class="msg" [(ngModel)]="movie.message"></ion-textarea>
                 </ion-item>
-
             </ion-list>
-            <div padding class="btn">
-                <button ion-button small outline class="button" (click)="demandsubmit()">Send</button>
-            </div>
+           
         </ion-card-content>
     </ion-card>
-
+ <div padding class="btn">
+                <button ion-button small outline class="button" (click)="demandsubmit()">Send</button>
+            </div>
 </ion-content>

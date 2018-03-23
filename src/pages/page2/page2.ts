@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Page1 } from '../page1/page1';
 import { Page7 } from '../page7/page7';
+import { TrailerPage } from '../trailerPage/trailerPage';
 import { Network } from 'ionic-native';
 import { Http } from '@angular/http';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
@@ -10,8 +11,15 @@ import 'rxjs/add/operator/map';
 import { Insomnia } from 'ionic-native';
 import { StreamingMedia, StreamingVideoOptions } from 'ionic-native';
 import { VgCoreModule } from 'videogular2/core';
+import { AdMob } from '@ionic-native/admob';
+import { SubscribePage } from '../subscribe/subscribe';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 declare var window: any;
+interface AdMobtype{
+  banner:string,
+  interstitial:string
+}
 @Component({
   selector: 'page-page2',
   templateUrl: 'page2.html',
@@ -22,6 +30,7 @@ export class Page2 {
   url: SafeResourceUrl;
   Page1 = Page1;
   Page7 = Page7;
+  TrailerPage:any;
   public posts = {};
   cameraSrc: string;
   cameraSrcc: string;
@@ -47,9 +56,18 @@ export class Page2 {
   imgurl:any;
   videoos:any;
   imgid:any;
+  adtext:any;
+  adlink:any;
+  ytube_link:any;
+  sub:any;
 
-constructor(public navCtrl: NavController, private platform: Platform, public alertCtrl: AlertController,  sanitizer: DomSanitizer, public navParams: NavParams, public popoverCtrl: PopoverController, private http: Http, private loadingCtrl: LoadingController, storage: Storage) {
-   this.videoos=document.getElementById('my-player'); 
+constructor(public navCtrl: NavController,private iab: InAppBrowser, private admob:AdMob, private platform: Platform, public alertCtrl: AlertController,  sanitizer: DomSanitizer, public navParams: NavParams, public popoverCtrl: PopoverController, private http: Http, private loadingCtrl: LoadingController, storage: Storage) {
+this.admob.hideBanner();
+  this.http.get('http://api.movies4star.xyz/adTextApp').map(res => res.json()).subscribe(data => {
+  
+      this.adtext = data.ad_image;
+      this.adlink = data.ad_link;
+    });
    
     Network.onDisconnect().subscribe(() => {
       this.platform.ready().then(() => {
@@ -93,7 +111,10 @@ constructor(public navCtrl: NavController, private platform: Platform, public al
       });
       this.http.get('http://api.movies4star.xyz/videos_front?slug=' + this.slug).map(res => res.json()).subscribe(data => {
         setTimeout(() => {
-          this.imgurl=data.movieImage;
+          this.imgurl = data.movieImage;
+          this.ytube_link = data.youtube_link;
+          this.cameraSrcc = "https://www.youtube.com/embed/" + this.ytube_link;
+          this.url = sanitizer.bypassSecurityTrustResourceUrl(this.cameraSrcc),
           StreamingMedia.playVideo(this.cameraSrc);
           Insomnia.keepAwake().then(() => 
                     
@@ -123,7 +144,7 @@ constructor(public navCtrl: NavController, private platform: Platform, public al
 
              () => console.log('error')
           )
-          this.video = "Trailor";
+          this.video = "Trailer";
           this.relatedOnes = data.related_movies;
           loadingPopup.dismiss();
         }, 1000);
@@ -132,18 +153,29 @@ constructor(public navCtrl: NavController, private platform: Platform, public al
         err => console.error(err)
       );
     }
-
+      
   }
-/*******VideoPlayer ********/
 
-
-  videoclick(a, b, idd) {
-  this.videoos=document.getElementById(idd); 
+  videoclick(movieslug, trailorslug, videoid) {
+  this.videoos=document.getElementById(videoid); 
   this.videoos.pause();
      this.navCtrl.push(Page2, {
-      firstPassed: a,
-      secondPassed: b,
+      firstPassed: movieslug,
+      secondPassed: trailorslug,
     });
+  }
+
+trailer(){
+  this.navCtrl.push(TrailerPage,{
+    firstPassed: this.slug
+  });
+}
+download(link){
+ var browser_link = this.iab.create(link);
+}
+
+  banner(link){
+var browser_link = this.iab.create(link);
   }
 
   reportpopup() {
@@ -195,31 +227,65 @@ constructor(public navCtrl: NavController, private platform: Platform, public al
     alert.present();
   }
 
-  presentPopover(myEvent) {
-    let popover = this.popoverCtrl.create(PopoverPage1);
-    popover.present({
-      ev: myEvent
+  subscribe(){
+     let alert = this.alertCtrl.create({
+      title: 'Subscribe for Newsletter',
+      cssClass: 'abtn',
+      inputs: [
+        {
+          name: 'email',
+          placeholder: 'Email',
+          type: 'email',
+          value: this.email
+        }
+      ],
+      buttons: [
+        {
+          text: 'Submit',
+          handler: data => {
+                this.http.get('http://api.movies4star.xyz/subscribe?email='+ data.email).map(res => res.json()).subscribe(data => {
+              this.sub = data;
+              if (this.sub.msg == "saved") {
+                this.platform.ready().then(() => {
+                  window.plugins.toast.show("Thanks for Subscribing", "long", "center");
+                });
+              }else if(this.sub.msg == "already exist"){
+                this.platform.ready().then(() => {
+                  window.plugins.toast.show("already exist", "long", "center");
+                });
+              }
+            });
+          }
+        }
+      ]
     });
+    alert.present();
   }
+
+  // presentPopover(myEvent) {
+  //   let popover = this.popoverCtrl.create(PopoverPage1);
+  //   popover.present({
+  //     ev: myEvent
+  //   });
+  // }
 
 }
 
-@Component({
-  template: `
-   <div class="hh" style="width:100px;">
-    <ion-list  style="margin-bottom:0px; width:160px;">
-      <button ion-item (click)="close()">Exit</button>
-    </ion-list>
-    </div>
-  `
-})
-export class PopoverPage1 {
-  content: any;
-  constructor(public viewCtrl: ViewController, private navParams: NavParams, public navCtrl: NavController) {
-  }
+// @Component({
+//   template: `
+//    <div class="hh" style="width:100px;">
+//     <ion-list  style="margin-bottom:0px; width:160px;">
+//       <button ion-item (click)="close()">Exit</button>
+//     </ion-list>
+//     </div>
+//   `
+// })
+// export class PopoverPage1 {
+//   content: any;
+//   constructor(public viewCtrl: ViewController, private navParams: NavParams, public navCtrl: NavController) {
+//   }
 
-  close() {
-    this.navCtrl.push(Page1);
-    window.location.reload(true);
-  }
-}
+//   close() {
+//     this.navCtrl.setRoot(Page1);
+//   }
+// }
